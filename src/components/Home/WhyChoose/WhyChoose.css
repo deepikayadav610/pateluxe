@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600&display=swap");
+
+@font-face {
+    font-family: "Manifesto";
+    src: url("/fonts/Manifesto.ttf") format("truetype");
+}
+
+.why-choose-section {
+    background-color: #fdfcfb;
+    color: #3f3f3f;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Soft luxury gradient overlay */
+.why-choose-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg,
+            rgba(226, 206, 196, 0.25),
+            rgba(147, 190, 191, 0.15));
+    z-index: 0;
+}
+
+.section-tagline {
+    font-family: "Manifesto", serif;
+    color: #93bebf;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 0.95rem;
+}
+
+.section-title {
+    font-family: "Manifesto", serif;
+    font-size: 2.3rem;
+    font-weight: 600;
+    color: #3f3f3f;
+}
+
+.section-subtitle {
+    font-family: "Lato", sans-serif;
+    font-size: 1.05rem;
+    color: #555;
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.choose-card {
+    background-color: #fff;
+    transition: all 0.4s ease;
+    border: 1px solid rgba(147, 190, 191, 0.15);
+    position: relative;
+    z-index: 1;
+}
+
+.choose-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(147, 190, 191, 0.25);
+}
+
+.icon-wrapper {
+    font-size: 2.2rem;
+    color: #93bebf;
+}
+
+.card-title {
+    font-family: "Manifesto", serif;
+    font-size: 1.2rem;
+    color: #3f3f3f;
+    font-weight: 600;
+}
+
+.card-text {
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.btn-why {
+    background-color: #e2cec4;
+    color: #3f3f3f;
+    border: none;
+    padding: 10px 28px;
+    border-radius: 30px;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-why:hover {
+    background-color: #93bebf;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .card-text {
+        font-size: 0.95rem;
+    }
+}

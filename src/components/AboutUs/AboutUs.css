@@ -1,0 +1,189 @@
+/* GENERAL FONT & BASE */
+.aboutus-premium {
+    font-family: 'Montserrat', sans-serif;
+    color: #e2cec4;
+}
+
+/* HERO / OUR STORY */
+.hero-premium {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #3f3f3f, #2e2e2e);
+    /* Dark gradient for hero */
+    color: #e2cec4;
+    position: relative;
+}
+
+.hero-image {
+    max-width: 100%;
+    width: 100%;
+    height: 45vh;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+    transition: transform 0.5s ease;
+}
+
+.hero-image:hover {
+    transform: scale(1.03);
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #93bebf;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.hero-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #e2cec4;
+    margin: 10px auto 0 auto;
+    border-radius: 2px;
+}
+
+.hero-text {
+    font-size: 1.1rem;
+    color: #e2cec4;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* VISION & MISSION SECTION */
+.vision-mission {
+    background-color: #3f525b;
+    /* Gray-Cyan tint for elegance */
+    color: #e2cec4;
+    padding: 80px 20px;
+    border-radius: 10px;
+    margin: 50px auto;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* CORE VALUES SECTION */
+.core-values {
+    background: linear-gradient(135deg, #3f3f3f, #3f474d);
+    /* Subtle gradient */
+    padding: 80px 20px;
+}
+
+/* WHY CHOOSE US SECTION */
+.why-choose-us {
+    background-color: #2e3a3f;
+    /* Darker cyan tint for contrast */
+    padding: 80px 20px;
+    color: #e2cec4;
+    border-radius: 10px;
+    margin: 50px auto;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* ABOUT IMAGE */
+.about-image {
+    border-radius: 10px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.about-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.7);
+}
+
+/* SECTION HEADINGS */
+.section-heading {
+    font-size: 2.2rem;
+    color: #93bebf;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    position: relative;
+}
+
+.section-heading::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #e2cec4;
+    margin: 10px auto 0 auto;
+    border-radius: 2px;
+}
+
+/* ABOUT TITLE & TEXT */
+.about-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #93bebf;
+    margin-bottom: 15px;
+}
+
+.about-text {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* VALUE LIST */
+.value-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.value-list li {
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.value-list li::before {
+    content: "•";
+    color: #93bebf;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.2rem;
+}
+
+/* BUTTON */
+.btn-explore {
+    display: inline-block;
+    background: linear-gradient(135deg, #93bebf, #e2cec4);
+    color: #3f3f3f;
+    padding: 12px 30px;
+    font-weight: 600;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: all 0.4s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.btn-explore:hover {
+    background: #e2cec4;
+    transform: scale(1.05);
+}
+
+/* RESPONSIVE */
+@media (max-width: 767px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .section-heading {
+        font-size: 1.8rem;
+    }
+
+    .hero-text {
+        font-size: 1rem;
+    }
+}

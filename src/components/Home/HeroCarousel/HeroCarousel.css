@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600&display=swap");
+
+@font-face {
+    font-family: "Manifesto";
+    src: url("/fonts/Manifesto.ttf") format("truetype");
+}
+
+.hero-carousel {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.carousel-bg {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.carousel-overlay {
+    background: linear-gradient(to bottom,
+            rgba(63, 63, 63, 0.4),
+            rgba(63, 63, 63, 0.6));
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-content {
+    text-align: center;
+    color: #fff;
+    max-width: 800px;
+    padding: 0 20px;
+    animation: fadeUp 1.5s ease-out;
+}
+
+.tagline {
+    font-family: "Manifesto", serif;
+    color: #e2cec4;
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.headline {
+    font-family: "Manifesto", serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 10px 0;
+    line-height: 1.2;
+}
+
+.subline {
+    font-family: "Lato", sans-serif;
+    font-size: 1.1rem;
+    color: #f1f1f1;
+    margin-bottom: 30px;
+}
+
+.hero-buttons .btn {
+    border-radius: 30px;
+    padding: 10px 26px;
+    font-family: "Lato", sans-serif;
+    transition: all 0.3s ease;
+}
+
+.btn-light {
+    background-color: #e2cec4;
+    color: #3f3f3f;
+    border: none;
+}
+
+.btn-light:hover {
+    background-color: #93bebf;
+    color: #fff;
+}
+
+.btn-outline-light {
+    color: #fff;
+    border: 1.5px solid #fff;
+}
+
+.btn-outline-light:hover {
+    background-color: #e2cec4;
+    border-color: #e2cec4;
+    color: #3f3f3f;
+}
+
+/* Animation */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .headline {
+        font-size: 2.4rem;
+    }
+
+    .subline {
+        font-size: 1rem;
+    }
+}
