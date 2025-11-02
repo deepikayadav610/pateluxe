@@ -1,4 +1,5 @@
 import AboutSection from "./AboutSection/AboutSection.jsx";
+import GemstoneCollection from "./GemstoneCollection/GemstoneCollection.jsx";
 import HeroCarousel from "./HeroCarousel/HeroCarousel.jsx";
 import WhyChoose from "./WhyChoose/WhyChoose.jsx";
 import "./Home.css";
@@ -7,6 +8,7 @@ function Home() {
     return (
         <>
             <HeroCarousel />
+            <GemstoneCollection />
             <AboutSection />
             <WhyChoose />
             <section className="cta-section d-flex align-items-center text-center">

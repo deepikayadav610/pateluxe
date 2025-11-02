@@ -5,7 +5,6 @@ const WhyChoose = () => {
     return (
         <section className="why-choose-section py-5" id="why-choose">
             <div className="container text-center">
-                <h6 className="section-tagline">Tradition Improved, Luxury Redefined.</h6>
                 <h2 className="section-title mb-4">Why Choose Pateluxe?</h2>
                 <p className="section-subtitle mb-5">
                     Take a look at our beautiful collection and see for yourself why Pateluxe is the best
@@ -54,12 +53,6 @@ const WhyChoose = () => {
                             </p>
                         </div>
                     </div>
-                </div>
-
-                <div className="mt-5">
-                    <a href="#collections" className="btn btn-why">
-                        Explore Our Collection
-                    </a>
                 </div>
             </div>
         </section>

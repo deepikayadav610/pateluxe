@@ -1,0 +1,100 @@
+.gemstone-section {
+    background: linear-gradient(135deg, #fdfcfb, #e2d1c3);
+    padding: 100px 0;
+    text-align: center;
+    color: #3f3f3f;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    color: #4b3832;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.section-subtitle {
+    color: #5a4c42;
+    font-size: 1.1rem;
+    margin-bottom: 60px;
+    font-family: 'Lato', sans-serif;
+}
+
+.gemstone-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.gemstone-card {
+    border-radius: 22px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.gemstone-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.gemstone-glass {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.35);
+    padding: 45px 20px;
+    border-radius: 22px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: background 0.3s ease;
+}
+
+.gemstone-card:hover .gemstone-glass {
+    background: rgba(255, 255, 255, 0.55);
+}
+
+.gem-icon {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    animation: gemGlow 3s infinite ease-in-out;
+    filter: drop-shadow(0 0 8px rgba(255, 215, 180, 0.6));
+}
+
+.gemstone-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    color: #3b2f2f;
+    margin-bottom: 5px;
+}
+
+.gemstone-card p {
+    font-family: 'Lato', sans-serif;
+    color: #4e4e4e;
+    font-size: 0.95rem;
+}
+
+@keyframes gemGlow {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.85;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    .section-subtitle {
+        font-size: 1rem;
+    }
+}

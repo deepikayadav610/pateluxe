@@ -1,9 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600&display=swap");
-
-@font-face {
-    font-family: "Manifesto";
-    src: url("/fonts/Manifesto.ttf") format("truetype");
-}
 
 .why-choose-section {
     background-color: #fdfcfb;

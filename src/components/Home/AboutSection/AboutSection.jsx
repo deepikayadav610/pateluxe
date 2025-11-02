@@ -19,7 +19,6 @@ const AboutSection = () => {
 
                     {/* Right Content */}
                     <div className="col-md-6">
-                        <h6 className="section-tagline">The Modern Vault of Elegance.</h6>
                         <h2 className="section-title mb-3">Find the Beauty in Each Gem.</h2>
 
                         <p className="about-text mb-3">
@@ -34,10 +33,6 @@ const AboutSection = () => {
                             explore the amazing beauty that lies ahead. Come along with us on this exciting journey
                             of style and discovery!
                         </p>
-
-                        <a href="#collections" className="btn btn-about mt-3">
-                            Explore Collections
-                        </a>
                     </div>
                 </div>
             </div>
