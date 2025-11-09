@@ -36,10 +36,6 @@ const Contact = () => {
                                     </p>
                                 </div>
                             </div>
-                            <p className="luxury-note">
-                                Our team is available Monday to Saturday,
-                                10:00 AM – 6:00 PM.
-                            </p>
                         </div>
                     </div>
 

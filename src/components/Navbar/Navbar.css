@@ -179,12 +179,6 @@
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-    .luxury-sidebar {
-        width: 80%;
-    }
-}
-
 /* Toggle Button (always visible on mobile) */
 .luxury-menu-btn {
     display: none;
