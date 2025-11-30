@@ -1,0 +1,134 @@
+/* SECTION BACKGROUND */
+.gemstone-section {
+    background: linear-gradient(135deg, #faf6ef, #e8dbc8);
+    padding: 110px 0;
+    text-align: center;
+    position: relative;
+}
+
+/* Floating gold dust for luxury feel */
+.gemstone-section::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    background: url('/gold-texture.png');
+    opacity: 0.04;
+    pointer-events: none;
+}
+
+/* HEADING */
+.section-title {
+    font-family: "Playfair Display", serif;
+    font-size: 3.3rem;
+    color: #3c2c22;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* SUBTITLE */
+.section-subtitle {
+    font-family: "Lato", sans-serif;
+    color: #5e4e45;
+    max-width: 720px;
+    margin: auto;
+    line-height: 1.7;
+    font-size: 1.15rem;
+    margin-bottom: 65px;
+}
+
+/* GRID */
+.gemstone-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 45px;
+}
+
+/* CARD */
+.gemstone-card {
+    border-radius: 26px;
+    position: relative;
+    overflow: hidden;
+    padding: 2px;
+    background-size: cover;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* Gold Shine Effect */
+.shine {
+    position: absolute;
+    top: -120%;
+    left: -120%;
+    width: 300%;
+    height: 300%;
+    background: linear-gradient(115deg,
+            rgba(255, 255, 255, 0.1) 0%,
+            rgba(255, 255, 255, 0.35) 50%,
+            rgba(255, 255, 255, 0.05) 100%);
+    transform: rotate(25deg);
+    transition: 0.8s;
+}
+
+.gemstone-card:hover .shine {
+    top: -30%;
+    left: -30%;
+}
+
+/* Frosted Glass Content */
+.gemstone-glass {
+    backdrop-filter: blur(14px);
+    background: rgba(255, 255, 255, 0.32);
+    border-radius: 26px;
+    text-align: center;
+    transition: backdrop-filter 0.4s ease, background 0.4s ease;
+}
+
+.gemstone-card:hover .gemstone-glass {
+    background: rgba(255, 255, 255, 0.45);
+}
+
+/* GEM IMAGES */
+.gem-icon img {
+    width: 110px;
+    filter: drop-shadow(0 5px 12px rgba(255, 215, 170, 0.6));
+    transition: transform 0.4s ease;
+}
+
+.gemstone-card:hover img {
+    transform: scale(1.12) translateY(-6px);
+}
+
+/* TEXT */
+.gemstone-card h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.45rem;
+    color: #352b25;
+    font-weight: 600;
+}
+
+.gemstone-card p {
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    color: #5c514c;
+}
+
+/* Hover effect */
+.gemstone-card:hover {
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.22);
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 780px) {
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+    .section-subtitle {
+        width: 90%;
+        font-size: 1.05rem;
+    }
+}

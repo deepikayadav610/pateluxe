@@ -3,11 +3,12 @@
     padding: 100px 0;
     text-align: center;
     color: #3f3f3f;
+    position: relative;
 }
 
 .section-title {
     font-family: 'Playfair Display', serif;
-    font-size: 2.8rem;
+    font-size: 3rem;
     color: #4b3832;
     margin-bottom: 10px;
     letter-spacing: 1px;
@@ -20,29 +21,97 @@
     font-family: 'Lato', sans-serif;
 }
 
-.gemstone-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 30px;
+/* Slider */
+.slider-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.gemstone-slider {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px 0;
+    scrollbar-width: none;
+}
+
+.gemstone-slider::-webkit-scrollbar {
+    display: none;
+}
+
+/* Buttons */
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    /* below the slider */
+    /* left: 50%; */
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 1.6rem;
+    text-align: center;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+
+    /* Luxury glass effect */
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15), 0 0 15px rgba(255, 215, 180, 0.2);
+
+    /* Smooth transition */
+    transition: all 0.4s ease;
+}
+
+/* Positioning */
+.prev-btn {
+    left: -5%;
+}
+
+.next-btn {
+    right: -5%;
+}
+
+.slider-btn:hover {
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25), 0 0 12px rgba(255, 215, 180, 0.8);
+    color: #dfbf0b;
+    transform: scale(1.2) translateX(var(--pos));
+}
+
+.slider-btn::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(255, 215, 180, 0.4);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.slider-btn:hover::after {
+    opacity: 1;
+}
+
+/* Gemstone Cards */
 .gemstone-card {
-    border-radius: 22px;
+    min-width: 280px;
+    border-radius: 25px;
     position: relative;
     overflow: hidden;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-.gemstone-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    flex-shrink: 0;
 }
 
 .gemstone-glass {
-    backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.35);
-    padding: 45px 20px;
-    border-radius: 22px;
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.3);
+    padding: 40px 20px;
+    border-radius: 25px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -55,23 +124,23 @@
 }
 
 .gem-icon {
-    font-size: 2.2rem;
-    margin-bottom: 10px;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
     animation: gemGlow 3s infinite ease-in-out;
-    filter: drop-shadow(0 0 8px rgba(255, 215, 180, 0.6));
+    filter: drop-shadow(0 0 10px rgba(255, 215, 180, 0.6));
 }
 
 .gemstone-card h3 {
     font-family: 'Playfair Display', serif;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: #3b2f2f;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 
 .gemstone-card p {
     font-family: 'Lato', sans-serif;
     color: #4e4e4e;
-    font-size: 0.95rem;
+    font-size: 1rem;
 }
 
 @keyframes gemGlow {
@@ -87,6 +156,10 @@
         opacity: 0.85;
     }
 }
+.gemstone-card img {
+    width: 100px;
+    height: auto;
+}
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -96,5 +169,45 @@
 
     .section-subtitle {
         font-size: 1rem;
+    }
+
+    .gemstone-card {
+        min-width: 220px;
+    }
+
+    .slider-btn {
+        font-size: 1.8rem;
+    }
+}
+
+/* Desktop Large - Show 4 items */
+@media (min-width: 1200px) {
+    .gemstone-card {
+        min-width: calc(25% - 30px);
+        /* 4 per row */
+    }
+}
+
+/* Desktop / Laptop - Show 3 items */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .gemstone-card {
+        min-width: calc(33.33% - 30px);
+        /* 3 per row */
+    }
+}
+
+/* Tablet - Show 2 items */
+@media (min-width: 600px) and (max-width: 991px) {
+    .gemstone-card {
+        min-width: calc(50% - 30px);
+        /* 2 per row */
+    }
+}
+
+/* Mobile - Show 1 item */
+@media (max-width: 599px) {
+    .gemstone-card {
+        min-width: 80%;
+        /* large single card */
     }
 }

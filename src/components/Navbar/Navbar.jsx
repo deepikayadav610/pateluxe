@@ -86,6 +86,11 @@ function Navbar() {
                                     Contact
                                 </Link>
                             </li>
+                            <li className="nav-item">
+                                <Link className="nav-link luxury-link" to="/enquiry">
+                                    Enquiry
+                                </Link>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -120,6 +125,11 @@ function Navbar() {
                     <li className="nav-item">
                         <Link className="nav-link luxury-link" to="/contact" onClick={() => setSidebarOpen(false)}>
                             Contact
+                        </Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link luxury-link" to="/enquiry" onClick={() => setSidebarOpen(false)}>
+                            Enquiry
                         </Link>
                     </li>
                     {/* {["Home", "About Us", "Products", "Blog", "Contact"].map(

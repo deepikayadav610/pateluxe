@@ -4,7 +4,7 @@ import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from "react-icons/f
 
 const Footer = () => {
     return (
-        <footer className="footer text-light pt-5 mt-5">
+        <footer className="footer text-light pt-5 ">
             <div className="footer-overlay"></div>
 
             <div className="container position-relative">

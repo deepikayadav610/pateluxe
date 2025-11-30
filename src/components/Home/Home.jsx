@@ -11,7 +11,7 @@ function Home() {
             <GemstoneCollection />
             <AboutSection />
             <WhyChoose />
-            <section className="cta-section d-flex align-items-center text-center">
+            <section className="cta-section d-flex align-items-center text-center mb-5">
                 <div className="container">
                     <h2 className="cta-title mb-3">
                         Your story deserves a one-of-a-kind gemstone.

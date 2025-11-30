@@ -4,13 +4,13 @@ import "./HeroCarousel.css";
 
 const slides = [
     {
-        image: "/image/bg-3.png",
+        image: "/image/homecarousel1.png",
     },
     {
-        image: "/image/bg-2.png",
+        image: "/image/525b3361-ddee-4258-a428-dc1009430f6e.png",
     },
     {
-        image: "/image/bg-1.png",
+        image: "/image/35bac178-7289-4127-81fc-cca4be526351.png",
     },
 ];
 

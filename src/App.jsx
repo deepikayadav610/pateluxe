@@ -4,22 +4,23 @@ import Home from "./components/Home/Home";
 import Footer from "./components/Footer/Footer";
 import AboutUs from "./components/AboutUs/AboutUs";
 import Contact from "./components/ContactUs/ContactUs";
-// import About from "./pages/About";
-// import Products from "./pages/Products";
-// import Blog from "./pages/Blog";
-// import Contact from "./pages/Contact";
+import Enquiry from "./components/Enquiry/Enquiry";
+import ScrollToTop from "./components/ScrollToTop";
+import Products from "./components/Products/Product";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
-        {/* <Route path="/products" element={<Products />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/contact" element={<Contact />} /> */}
+        <Route path="/enquiry" element={<Enquiry />} />
+        <Route path="/products/*" element={<Products />} />
       </Routes>
       <Footer />
     </Router>
