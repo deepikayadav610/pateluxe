@@ -1,53 +1,87 @@
 import React from "react";
 import "./Footer.css";
-import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaTwitter,
+  FaLinkedinIn,
+} from "react-icons/fa";
 
 const Footer = () => {
-    return (
-        <footer className="footer text-light pt-5 ">
-            <div className="footer-overlay"></div>
+  return (
+    <footer className="footer text-light pt-5 ">
+      <div className="footer-overlay"></div>
 
-            <div className="container position-relative">
-                <div className="row gy-4">
+      <div className="container position-relative">
+        <div className="row gy-4">
+          {/* Quick Links */}
+          <div className="col-md-4">
+            <h5 className="footer-title">Quick Links</h5>
 
-                    {/* Quick Links */}
-                    <div className="col-md-4">
-                        <h5 className="footer-title">Quick Links</h5>
-                        <ul className="list-unstyled footer-links">
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/products">Collections</a></li>
-                            <li><a href="/about">About Us</a></li>
-                            <li><a href="/contact">Contact</a></li>
-                        </ul>
-                    </div>
+            <ul className="footer-links-layout">
+              <li className="home">
+                <a href="/">Home</a>
+              </li>
+              <li className="product">
+                <a href="/products">Product</a>
+              </li>
+              <li className="contact">
+                <a href="/contact">Contact Us</a>
+              </li>
 
-                    {/* Contact Info */}
-                    <div className="col-md-4">
-                        <h5 className="footer-title">Get in Touch</h5>
-                        <p>Email: <a href="mailto:info@pateluxe.com">info@pateluxe.com</a></p>
-                        <p>Phone: <a href="tel:+911234567890">+91 123 456 7890</a></p>
-                    </div>
+              <li className="collection">
+                <a href="/products">Collection</a>
+              </li>
+              <li className="services">
+                <a href="/services">Services</a>
+              </li>
+              <li className="enquiry">
+                <a href="/enquiry">Enquiry</a>
+              </li>
 
-                    {/* Social Icons */}
-                    <div className="col-md-4">
-                        <h5 className="footer-title">Follow Us</h5>
-                        <div className="d-flex gap-3 social-icons">
-                            <a href="#"><FaFacebookF /></a>
-                            <a href="#"><FaInstagram /></a>
-                        </div>
-                    </div>
-                </div>
+              <li className="about">
+                <a href="/about">About Us</a>
+              </li>
+            </ul>
+          </div>
 
-                <div className="footer-divider"></div>
+          {/* Contact Info */}
+          <div className="col-md-4">
+            <h5 className="footer-title">Get in Touch</h5>
+            <p>
+              Email:
+              <a href="mailto:pateluxe8@gmail.com"> pateluxe8@gmail.com</a>
+            </p>
+            <p>
+              Phone: <a href="tel:+919821874031">+91 9821874031</a>
+            </p>
+          </div>
 
-                <div className="text-center pt-3 footer-bottom">
-                    <p className="mb-0">
-                        &copy; {new Date().getFullYear()} <span className="brand-name">Pateluxe</span>. All Rights Reserved.
-                    </p>
-                </div>
+          {/* Social Icons */}
+          <div className="col-md-4">
+            <h5 className="footer-title">Follow Us</h5>
+            <div className="d-flex gap-3 social-icons">
+              <a href="#">
+                <FaFacebookF />
+              </a>
+              <a href="#">
+                <FaInstagram />
+              </a>
             </div>
-        </footer>
-    );
+          </div>
+        </div>
+
+        <div className="footer-divider"></div>
+
+        <div className="text-center pt-3 footer-bottom">
+          <p className="mb-0">
+            &copy; {new Date().getFullYear()}{" "}
+            <span className="brand-name">Pateluxe</span>. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;

@@ -47,7 +47,7 @@
 .swiper-slide {
   display: flex;
   justify-content: center;
-  align-items: stretch; 
+  align-items: stretch;
   height: auto;
 }
 
@@ -125,7 +125,7 @@
   min-height: 260px;
   backdrop-filter: blur(14px);
   background: rgba(255, 255, 255, 0.38);
-  padding: 40px 20px;
+  padding: 10px 15px;
   border-radius: 28px;
   display: flex;
   flex-direction: column;

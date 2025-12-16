@@ -3,136 +3,207 @@ import { useEffect, useState } from "react";
 import "./Navbar.css";
 
 function Navbar() {
-    const [scrolled, setScrolled] = useState(false);
-    const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [serviceOpen, setServiceOpen] = useState(false);
 
-    // Detect Scroll
-    useEffect(() => {
-        const handleScroll = () => setScrolled(window.scrollY > 50);
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
+  // Detect Scroll
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 50);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
-    // Close sidebar when clicking outside it
-    useEffect(() => {
-        const handleClickOutside = (e) => {
-            if (
-                sidebarOpen &&
-                !e.target.closest(".luxury-sidebar") &&
-                !e.target.closest(".luxury-menu-btn")
-            ) {
-                setSidebarOpen(false);
-            }
-        };
-        document.addEventListener("mousedown", handleClickOutside);
-        return () => document.removeEventListener("mousedown", handleClickOutside);
-    }, [sidebarOpen]);
+  // Close sidebar when clicking outside it
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (
+        sidebarOpen &&
+        !e.target.closest(".luxury-sidebar") &&
+        !e.target.closest(".luxury-menu-btn")
+      ) {
+        setSidebarOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [sidebarOpen]);
 
-    return (
-        <>
-            <nav
-                className={`navbar navbar-expand-lg fixed-top ${scrolled ? "bg-nav shadow-sm" : "bg"
-                    }`}
-            >
-                <div className="container d-flex justify-content-between align-items-center">
-                    {/* Logo */}
-                    <Link
-                        className="navbar-brand fw-bold text-gold d-flex align-items-center"
-                        to="/"
-                    >
-                        <img
-                            src="/image/pateluxe-dark.png"
-                            alt="Pateluxe logo"
-                            width={150}
-                            height={65}
-                        />
+  return (
+    <>
+      <nav
+        className={`navbar navbar-expand-lg fixed-top ${
+          scrolled ? "bg-nav shadow-sm" : "bg"
+        }`}
+      >
+        <div className="container d-flex justify-content-between align-items-center">
+          {/* Logo */}
+          <Link
+            className="navbar-brand fw-bold text-gold d-flex align-items-center"
+            to="/"
+          >
+            <img
+              src="/image/pateluxe-dark.png"
+              alt="Pateluxe logo"
+              width={150}
+              height={65}
+            />
+          </Link>
+
+          {/* Sidebar Toggle */}
+          <button
+            className="luxury-menu-btn"
+            onClick={() => setSidebarOpen(!sidebarOpen)}
+          >
+            <span className="luxury-line"></span>
+            <span className="luxury-line"></span>
+            <span className="luxury-line"></span>
+          </button>
+
+          {/* Desktop Menu */}
+          <div className="collapse navbar-collapse justify-content-end d-none d-lg-flex">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <Link className="nav-link luxury-link" to="/">
+                  Home
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link luxury-link" to="/about">
+                  About Us
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link luxury-link" to="/products">
+                  Products
+                </Link>
+              </li>
+              <li className="nav-item luxury-dropdown">
+                <span className="nav-link luxury-link luxury-dropdown-toggle">
+                  Services
+                </span>
+
+                <ul className="luxury-dropdown-menu">
+                  <li>
+                    <Link to="/services/loose-gemstone">Loose Gemstone</Link>
+                  </li>
+                  <li>
+                    <Link to="/services/lot">Lot</Link>
+                  </li>
+                  <li>
+                    <Link to="/services/customized-jewellery">
+                      Customized Jewellery
                     </Link>
+                  </li>
+                </ul>
+              </li>
 
-                    {/* Sidebar Toggle */}
-                    <button
-                        className="luxury-menu-btn"
-                        onClick={() => setSidebarOpen(!sidebarOpen)}
-                    >
-                        <span className="luxury-line"></span>
-                        <span className="luxury-line"></span>
-                        <span className="luxury-line"></span>
-                    </button>
+              <li className="nav-item">
+                <Link className="nav-link luxury-link" to="/contact">
+                  Contact
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link luxury-link" to="/enquiry">
+                  Enquiry
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
-                    {/* Desktop Menu */}
-                    <div className="collapse navbar-collapse justify-content-end d-none d-lg-flex">
-                        <ul className="navbar-nav">
-                            <li className="nav-item">
-                                <Link className="nav-link luxury-link" to="/">
-                                    Home
-                                </Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link luxury-link" to="/about">
-                                    About Us
-                                </Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link luxury-link" to="/products">
-                                    Products
-                                </Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link luxury-link" to="/blog">
-                                    Blog
-                                </Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link luxury-link" to="/contact">
-                                    Contact
-                                </Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link luxury-link" to="/enquiry">
-                                    Enquiry
-                                </Link>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+      {/* Luxury Sidebar */}
+      <div className={`luxury-sidebar ${sidebarOpen ? "open" : ""}`}>
+        <button className="close-btn" onClick={() => setSidebarOpen(false)}>
+          &times;
+        </button>
+        <ul className="sidebar-links">
+          <li className="nav-item">
+            <Link
+              className="nav-link luxury-link"
+              to="/"
+              onClick={() => setSidebarOpen(false)}
+            >
+              Home
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              className="nav-link luxury-link"
+              to="/about"
+              onClick={() => setSidebarOpen(false)}
+            >
+              About Us
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              className="nav-link luxury-link"
+              to="/products"
+              onClick={() => setSidebarOpen(false)}
+            >
+              Products
+            </Link>
+          </li>
+          <li className="nav-item sidebar-item">
+            <div
+              className="nav-link luxury-link sidebar-dropdown"
+              onClick={() => setServiceOpen(!serviceOpen)}
+            >
+              Services
+              <span className={`arrow ${serviceOpen ? "open" : ""}`}></span>
+            </div>
 
-            {/* Luxury Sidebar */}
-            <div className={`luxury-sidebar ${sidebarOpen ? "open" : ""}`}>
-                <button className="close-btn" onClick={() => setSidebarOpen(false)}>
-                    &times;
-                </button>
-                <ul className="sidebar-links">
-                    <li className="nav-item">
-                        <Link className="nav-link luxury-link" to="/" onClick={() => setSidebarOpen(false)}>
-                            Home
-                        </Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-link luxury-link" to="/about" onClick={() => setSidebarOpen(false)}>
-                            About Us
-                        </Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-link luxury-link" to="/products" onClick={() => setSidebarOpen(false)}>
-                            Products
-                        </Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-link luxury-link" to="/blog" onClick={() => setSidebarOpen(false)}>
-                            Blog
-                        </Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-link luxury-link" to="/contact" onClick={() => setSidebarOpen(false)}>
-                            Contact
-                        </Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-link luxury-link" to="/enquiry" onClick={() => setSidebarOpen(false)}>
-                            Enquiry
-                        </Link>
-                    </li>
-                    {/* {["Home", "About Us", "Products", "Blog", "Contact"].map(
+            {serviceOpen && (
+              <ul className="sidebar-submenu">
+                <li>
+                  <Link
+                    to="/services/loose-gemstone"
+                    onClick={() => setSidebarOpen(false)}
+                  >
+                    Loose Gemstone
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/services/lot"
+                    onClick={() => setSidebarOpen(false)}
+                  >
+                    Lot
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/services/customized-jewellery"
+                    onClick={() => setSidebarOpen(false)}
+                  >
+                    Customized Jewellery
+                  </Link>
+                </li>
+              </ul>
+            )}
+          </li>
+
+          <li className="nav-item">
+            <Link
+              className="nav-link luxury-link"
+              to="/contact"
+              onClick={() => setSidebarOpen(false)}
+            >
+              Contact
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              className="nav-link luxury-link"
+              to="/enquiry"
+              onClick={() => setSidebarOpen(false)}
+            >
+              Enquiry
+            </Link>
+          </li>
+          {/* {["Home", "About Us", "Products", "Blog", "Contact"].map(
                         (item, idx) => (
                             <li key={idx}>
                                 <Link
@@ -144,18 +215,18 @@ function Navbar() {
                             </li>
                         )
                     )} */}
-                </ul>
-            </div>
+        </ul>
+      </div>
 
-            {/* Overlay */}
-            {sidebarOpen && (
-                <div
-                    className="luxury-overlay"
-                    onClick={() => setSidebarOpen(false)}
-                ></div>
-            )}
-        </>
-    );
+      {/* Overlay */}
+      {sidebarOpen && (
+        <div
+          className="luxury-overlay"
+          onClick={() => setSidebarOpen(false)}
+        ></div>
+      )}
+    </>
+  );
 }
 
 export default Navbar;

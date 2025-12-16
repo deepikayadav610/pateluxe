@@ -34,7 +34,7 @@ const AboutUs = () => {
                     <h3 className="section-heading mb-4">Why Choose Us?</h3>
                     <p className="intro-text mb-5">
                         Authenticity. Integrity. Expertise. <br />
-                        Pateluxe isn’t just a gemstone store — it’s a legacy of trust and craftsmanship.
+                        Pateluxe isn’t just a gemstone store, it’s a legacy of trust and craftsmanship.
                     </p>
 
                     <div className="row justify-content-center g-4">
@@ -50,7 +50,7 @@ const AboutUs = () => {
                     </div>
 
                     <p className="aboutus-text mt-5 fw-bold">
-                        Pateluxe — Where Every Gemstone Tells a Story of Purity and Trust.
+                        Pateluxe, Where Every Gemstone Tells a Story of Purity and Trust.
                     </p>
                 </div>
             </section>

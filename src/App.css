@@ -1,0 +1,14 @@
+/* Disable text selection */
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Disable image dragging */
+img {
+  pointer-events: none;
+  -webkit-user-drag: none;
+  user-drag: none;
+}

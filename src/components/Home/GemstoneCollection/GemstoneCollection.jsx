@@ -73,7 +73,7 @@ const GemstoneCollection = () => {
       <div className="container text-center">
         <h2 className="section-title">Our Exquisite Gemstone Collection</h2>
         <p className="section-subtitle">
-          Discover the rare beauty and inner light of each gemstone — where
+          Discover the rare beauty and inner light of each gemstone, where
           elegance meets energy.
         </p>
       </div>
@@ -88,7 +88,7 @@ const GemstoneCollection = () => {
           modules={[Navigation, Pagination, Autoplay]}
           onSwiper={(swiper) => (swiperRef.current = swiper)}
           loop
-          speed={800}
+          speed={900}
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,
