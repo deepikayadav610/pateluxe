@@ -60,7 +60,7 @@ const gemstones = [
 
 const GemstoneProductCollection = () => {
   return (
-    <section className="gemstone-section">
+    <section className="product-gemstone-section">
       <div className="container text-center">
         <h2 className="section-title">Premium Gemstone Collection</h2>
         <p className="section-subtitle">

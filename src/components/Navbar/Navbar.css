@@ -18,7 +18,7 @@
 }
 
 .nav-link:hover {
-  color: #b8860b !important;
+  color: #e2cec4 !important;
 }
 .nav-link::after {
   content: "";
@@ -118,7 +118,7 @@
   content: "";
   margin-left: 6px;
   font-size: 15px;
-  color: #b8860b;
+  color: #e2cec4;
   transition: transform 0.3s ease;
 }
 
@@ -154,15 +154,13 @@
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.3px;
-
   color: #93bebf;
   text-decoration: none;
-
   transition: color 0.25s ease, transform 0.25s ease;
 }
 
 .sidebar-submenu li a:hover {
-  color: #caa14d;
+  color: #e2cec4;
   transform: translateX(3px);
 }
 
@@ -255,7 +253,6 @@
 }
 
 .sidebar-links a {
-  font-family: "Playfair Display", serif;
   font-size: 1.2rem;
   color: #6d5c4d;
   text-decoration: none;

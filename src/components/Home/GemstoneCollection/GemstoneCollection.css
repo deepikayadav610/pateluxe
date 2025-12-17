@@ -9,17 +9,17 @@
   overflow: hidden;
 }
 
-.section-title {
+.gemstone-section-title {
   font-family: "Playfair Display", serif;
   font-size: 3rem;
   color: #4b3832;
   margin-bottom: 10px;
 }
 
-.section-subtitle {
+.gemstone-section-subtitle {
   color: #5a4c42;
   font-size: 1.1rem;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   font-family: "Lato", sans-serif;
 }
 
@@ -52,38 +52,57 @@
 }
 
 /* ===============================
-   Navigation Buttons 
+   Luxury Swiper Navigation
 ================================ */
 .swiper-button-prev,
 .swiper-button-next {
-  width: 44px;
-  height: 44px;
+  width: 52px;
+  height: 52px;
   top: 45%;
   transform: translateY(-50%);
   z-index: 10;
-  color: #dfbf0b;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(10px);
   border-radius: 50%;
-  transition: all 0.3s ease;
+  border: 1px solid rgba(223, 191, 11, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  color: #b89b2e;
+  transition: all 0.35s ease;
 }
 
+/* Arrow icon */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Hover – luxury glow */
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 8px 25px rgba(223, 191, 11, 0.25),
+    inset 0 0 0 1px rgba(223, 191, 11, 0.6);
+  transform: translateY(-50%) scale(1.08);
+}
+
+/* Slight active press */
+.swiper-button-prev:active,
+.swiper-button-next:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+/* Position remains same */
 .swiper-button-prev {
   left: 0;
 }
 
 .swiper-button-next {
   right: 0;
-}
-
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
-  transform: translateY(-50%) scale(1.1);
 }
 
 /* ===============================
@@ -112,7 +131,7 @@
 ================================ */
 .gemstone-card {
   width: 100%;
-  max-width: 280px;
+  max-width: 250px;
   border-radius: 28px;
   transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
@@ -122,7 +141,7 @@
 ================================ */
 .gemstone-glass {
   height: 100%;
-  min-height: 260px;
+  min-height: 170px;
   backdrop-filter: blur(14px);
   background: rgba(255, 255, 255, 0.38);
   padding: 10px 15px;
@@ -141,7 +160,7 @@
    Icon
 ================================ */
 .gem-icon {
-  margin-bottom: 18px;
+  margin-bottom: 7px;
   animation: gemGlow 3s infinite ease-in-out;
 }
 
@@ -156,7 +175,7 @@
   font-family: "Playfair Display", serif;
   font-size: 1.4rem;
   color: #3b2f2f;
-  margin-bottom: 6px;
+  margin-bottom: 3px;
 }
 
 .gemstone-card p {
@@ -190,12 +209,16 @@
 }
 
 @media (max-width: 576px) {
-  .section-title {
-    font-size: 2rem;
-  }
-
   .swiper-button-prev,
   .swiper-button-next {
-    display: none;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+  }
+
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 12px;
   }
 }

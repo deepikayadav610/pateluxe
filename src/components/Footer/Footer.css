@@ -26,18 +26,20 @@
 .footer-title {
   font-weight: 600;
   color: #f1d4c2;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
   font-size: 1.2rem;
   letter-spacing: 1px;
   position: relative;
+  text-align: center;
 }
 
 .footer-title::after {
   content: "";
   position: absolute;
-  bottom: -6px;
-  left: 0;
-  width: 40px;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 42px;
   height: 2px;
   background: linear-gradient(90deg, #e2cec4, #93bebf);
   border-radius: 2px;
@@ -188,10 +190,11 @@
 .footer-links-layout {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, max-content);
   gap: 12px 40px;
+  justify-content: center;
 }
 
 /* Explicit placement */
@@ -295,9 +298,9 @@
   .footer-links-layout {
     grid-template-columns: repeat(2, max-content);
     gap: 12px 30px;
+    justify-content: center;
   }
 
-  /* Reset manual placement for tablet */
   .footer-links-layout li {
     grid-column: auto !important;
     grid-row: auto !important;

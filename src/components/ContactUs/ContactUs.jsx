@@ -15,30 +15,6 @@ const Contact = () => {
         </div>
 
         <div className="row justify-content-center align-items-start g-5">
-          {/* Contact Info */}
-          <div className="col-md-5">
-            <div className="contact-box">
-              <div className="info-item">
-                <FaEnvelope className="info-icon" />
-                <div>
-                  <h5>Email</h5>
-                  <p>
-                    <a href="mailto:pateluxe8@gmail.com">pateluxe8@gmail.com</a>
-                  </p>
-                </div>
-              </div>
-              <div className="info-item">
-                <FaPhoneAlt className="info-icon" />
-                <div>
-                  <h5>Phone</h5>
-                  <p>
-                    <a href="tel:+919821874031">+91 9821874031</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
           {/* Contact Form */}
           <div className="col-md-6">
             <form className="contact-form-luxury p-4">
@@ -93,6 +69,30 @@ const Contact = () => {
                 Send Message
               </button>
             </form>
+          </div>
+
+          {/* Contact Info */}
+          <div className="col-md-5">
+            <div className="contact-box">
+              <div className="info-item">
+                <FaEnvelope className="info-icon" />
+                <div>
+                  <h5>Email</h5>
+                  <p>
+                    <a href="mailto:pateluxe8@gmail.com">pateluxe8@gmail.com</a>
+                  </p>
+                </div>
+              </div>
+              <div className="info-item">
+                <FaPhoneAlt className="info-icon" />
+                <div>
+                  <h5>Phone</h5>
+                  <p>
+                    <a href="tel:+919821874031">+91 9821874031</a>
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

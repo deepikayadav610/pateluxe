@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="row gy-4">
           {/* Quick Links */}
           <div className="col-md-4">
-            <h5 className="footer-title">Quick Links</h5>
+            <h5 className="footer-title text-center">Quick Links</h5>
 
             <ul className="footer-links-layout">
               <li className="home">
@@ -48,11 +48,11 @@ const Footer = () => {
           {/* Contact Info */}
           <div className="col-md-4">
             <h5 className="footer-title">Get in Touch</h5>
-            <p>
+            <p className="text-center">
               Email:
               <a href="mailto:pateluxe8@gmail.com"> pateluxe8@gmail.com</a>
             </p>
-            <p>
+            <p className="text-center">
               Phone: <a href="tel:+919821874031">+91 9821874031</a>
             </p>
           </div>
@@ -60,11 +60,11 @@ const Footer = () => {
           {/* Social Icons */}
           <div className="col-md-4">
             <h5 className="footer-title">Follow Us</h5>
-            <div className="d-flex gap-3 social-icons">
-              <a href="#">
+            <div className="d-flex justify-content-center gap-3 social-icons">
+              <a href="#" className="text-center">
                 <FaFacebookF />
               </a>
-              <a href="#">
+              <a href="#" className="text-center">
                 <FaInstagram />
               </a>
             </div>
