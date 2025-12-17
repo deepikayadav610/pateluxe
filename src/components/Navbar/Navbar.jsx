@@ -6,6 +6,7 @@ function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [serviceOpen, setServiceOpen] = useState(false);
+  const [productOpen, setProductOpen] = useState(false);
 
   // Detect Scroll
   useEffect(() => {
@@ -73,11 +74,47 @@ function Navbar() {
                   About Us
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link luxury-link" to="/products">
+              <li className="nav-item luxury-dropdown">
+                {/* Clickable Product */}
+                <Link
+                  className="nav-link luxury-link luxury-dropdown-toggle"
+                  to="/products"
+                >
                   Products
                 </Link>
+
+                {/* Dropdown */}
+                <ul className="luxury-dropdown-menu">
+                  <li>
+                    <Link to="/products/ruby">Ruby</Link>
+                  </li>
+                  <li>
+                    <Link to="/products/pearl">Pearl</Link>
+                  </li>
+                  <li>
+                    <Link to="/products/red-coral">Red Coral</Link>
+                  </li>
+                  <li>
+                    <Link to="/products/emerald">Emerald</Link>
+                  </li>
+                  <li>
+                    <Link to="/products/yellow-sapphire">Yellow Sapphire</Link>
+                  </li>
+                  <li>
+                    <Link to="/products/diamond">Diamond</Link>
+                  </li>
+                  <li>
+                    <Link to="/products/blue-sapphire">Blue Sapphire</Link>
+                  </li>
+                  <li>
+                    <Link to="/products/hessonite">Hessonite</Link>
+                  </li>
+                  <li>
+                    <Link to="/products/cats-eye">Cat’s Eye</Link>
+                  </li>
+                </ul>
               </li>
+
               <li className="nav-item luxury-dropdown">
                 <span className="nav-link luxury-link luxury-dropdown-toggle">
                   Services
@@ -137,15 +174,93 @@ function Navbar() {
               About Us
             </Link>
           </li>
-          <li className="nav-item">
-            <Link
-              className="nav-link luxury-link"
-              to="/products"
-              onClick={() => setSidebarOpen(false)}
+          <li className="nav-item sidebar-item">
+            <div
+              className="nav-link luxury-link sidebar-dropdown"
+              onClick={() => setProductOpen(!productOpen)}
             >
               Products
-            </Link>
+              <span className={`arrow ${productOpen ? "open" : ""}`}></span>
+            </div>
+
+            {productOpen && (
+              <ul className="sidebar-submenu">
+                <li>
+                  <Link
+                    to="/products/ruby"
+                    onClick={() => setSidebarOpen(false)}
+                  >
+                    Ruby
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/products/pearl"
+                    onClick={() => setSidebarOpen(false)}
+                  >
+                    Pearl
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/products/red-coral"
+                    onClick={() => setSidebarOpen(false)}
+                  >
+                    Red Coral
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/products/emerald"
+                    onClick={() => setSidebarOpen(false)}
+                  >
+                    Emerald
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/products/yellow-sapphire"
+                    onClick={() => setSidebarOpen(false)}
+                  >
+                    Yellow Sapphire
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/products/diamond"
+                    onClick={() => setSidebarOpen(false)}
+                  >
+                    Diamond
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/products/blue-sapphire"
+                    onClick={() => setSidebarOpen(false)}
+                  >
+                    Blue Sapphire
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/products/hessonite"
+                    onClick={() => setSidebarOpen(false)}
+                  >
+                    Hessonite
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/products/cats-eye"
+                    onClick={() => setSidebarOpen(false)}
+                  >
+                    Cat’s Eye
+                  </Link>
+                </li>
+              </ul>
+            )}
           </li>
+
           <li className="nav-item sidebar-item">
             <div
               className="nav-link luxury-link sidebar-dropdown"

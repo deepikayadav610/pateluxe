@@ -12,6 +12,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import StickyContact from "./components/StickyComponent/StickyComponent";
 import "./App.css";
+import PageNotFound from "./components/PageNotFound";
 
 function App() {
   useEffect(() => {
@@ -47,7 +48,8 @@ function App() {
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/enquiry" element={<Enquiry />} />
-        <Route path="/products/*" element={<Products />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Footer />
     </Router>

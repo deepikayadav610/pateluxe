@@ -40,6 +40,11 @@
   position: relative;
 }
 
+.luxury-dropdown > a {
+  display: inline-flex;
+  align-items: center;
+}
+
 .luxury-dropdown::after {
   content: "";
   position: absolute;
