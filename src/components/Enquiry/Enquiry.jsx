@@ -48,7 +48,6 @@ export default function Enquiry() {
     <section className="enquiry-wrapper">
       <div className="enquiry-form-box">
         <h2 className="form-title">Enquiry Form</h2>
-        <p className="mandatory-note">* All fields are mandatory</p>
 
         <form ref={formRef} onSubmit={sendEmail} className="form-grid">
           <div className="input-box">
@@ -133,9 +132,15 @@ export default function Enquiry() {
             </select>
             <p className="note">*Certification charges will be additional</p>
           </div>
-          <button type="submit" className="lux-btn" disabled={loading}>
-            {loading ? "Sending..." : "Submit Enquiry"}
-          </button>
+
+          {/* FORM FOOTER */}
+          <div className="form-footer">
+            <p className="mandatory-note">* All fields are mandatory</p>
+
+            <button type="submit" className="lux-btn" disabled={loading}>
+              {loading ? "Sending..." : "Submit Enquiry"}
+            </button>
+          </div>
         </form>
         {success && (
           <div className="lux-overlay">

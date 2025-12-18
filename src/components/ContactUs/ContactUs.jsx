@@ -102,7 +102,7 @@ const Contact = () => {
                 />
               </div>
 
-              <div className="mb-4">
+              <div className="mb-2">
                 <textarea
                   className="form-control"
                   rows="5"
