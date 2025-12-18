@@ -50,10 +50,10 @@ const HeroCarousel = () => {
                     <h1 className="headline">Find the Beauty in Each Gem.</h1>
 
                     <div className="hero-buttons">
-                        <a href="#collections" className="btn btn-light me-3">
+                        <a href="/products" className="btn btn-light me-3">
                             Explore Collections
                         </a>
-                        <a href="#about" className="btn btn-outline-light">
+                        <a href="/about" className="btn btn-outline-light">
                             Discover Our Story
                         </a>
                     </div>

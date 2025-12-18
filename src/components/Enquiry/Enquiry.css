@@ -124,6 +124,103 @@
   background: linear-gradient(135deg, #e2cec4, #e8e4df);
 }
 
+/* success pop up */
+/* === LUXURY OVERLAY === */
+.lux-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(63, 63, 63, 0.55);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: fadeIn 0.4s ease;
+}
+
+/* === MODAL BOX === */
+.lux-modal {
+  background: #ffffff;
+  width: 90%;
+  max-width: 420px;
+  padding: 45px 35px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
+  animation: scaleUp 0.45s ease;
+  position: relative;
+}
+
+/* === ICON === */
+.lux-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: #e2cec4;
+  color: #3f3f3f;
+  font-size: 34px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* === TEXT === */
+.lux-modal h3 {
+  font-size: 26px;
+  color: #3f3f3f;
+  margin-bottom: 12px;
+  font-family: "Playfair Display", serif;
+}
+
+.lux-modal p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* === BUTTON === */
+.lux-close-btn {
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: none;
+  background: #93bebf;
+  color: #3f3f3f;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.lux-close-btn:hover {
+  background: #3f3f3f;
+  color: #ffffff;
+}
+
+/* === ANIMATIONS === */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0.92);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .form-grid {

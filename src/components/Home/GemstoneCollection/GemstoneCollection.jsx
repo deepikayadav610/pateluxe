@@ -71,7 +71,9 @@ const GemstoneCollection = () => {
   return (
     <section className="gemstone-section">
       <div className="container text-center">
-        <h2 className="gemstone-section-title">Our Exquisite Gemstone Collection</h2>
+        <h2 className="gemstone-section-title">
+          Our Exquisite Gemstone Collection
+        </h2>
         <p className="gemstone-section-subtitle">
           Discover the rare beauty and inner light of each gemstone, where
           elegance meets energy.
@@ -88,9 +90,9 @@ const GemstoneCollection = () => {
           modules={[Navigation, Pagination, Autoplay]}
           onSwiper={(swiper) => (swiperRef.current = swiper)}
           loop
-          speed={700}
+          speed={900}
           autoplay={{
-            delay: 500,
+            delay: 800,
             disableOnInteraction: false,
           }}
           navigation
@@ -98,10 +100,10 @@ const GemstoneCollection = () => {
           spaceBetween={40}
           breakpoints={{
             0: { slidesPerView: 1, spaceBetween: 20 },
-            576: { slidesPerView: 2, spaceBetween: 25 },
-            768: { slidesPerView: 2, spaceBetween: 30 },
-            992: { slidesPerView: 3, spaceBetween: 35 },
-            1200: { slidesPerView: 4, spaceBetween: 40 },
+            576: { slidesPerView: 2, spaceBetween: 20 },
+            768: { slidesPerView: 3, spaceBetween: 20 },
+            992: { slidesPerView: 4, spaceBetween: 20 },
+            1200: { slidesPerView: 5, spaceBetween: 40 },
           }}
           className="gemstone-swiper"
         >

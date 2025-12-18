@@ -1,8 +1,45 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 import "./ContactUs.css";
-import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope, FaCheckCircle } from "react-icons/fa";
 
 const Contact = () => {
+  const formRef = useRef();
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    const templateParams = {
+      user_name: formRef.current.user_name.value,
+      user_email: formRef.current.user_email.value,
+      user_phone: formRef.current.user_phone.value,
+      subject: formRef.current.subject.value,
+      message: formRef.current.message.value,
+    };
+
+    emailjs
+      .send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        templateParams,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      )
+      .then(() => {
+        setLoading(false);
+        setSuccess(true);
+        formRef.current.reset();
+        setTimeout(() => setSuccess(false), 4000);
+      })
+      .catch((error) => {
+        setLoading(false);
+        console.error("EmailJS Error:", error);
+        alert("Something went wrong. Please try again.");
+      });
+  };
+
   return (
     <section className="contact-luxury">
       <div className="container py-5">
@@ -17,11 +54,16 @@ const Contact = () => {
         <div className="row justify-content-center align-items-start g-5">
           {/* Contact Form */}
           <div className="col-md-6">
-            <form className="contact-form-luxury p-4">
+            <form
+              ref={formRef}
+              onSubmit={sendEmail}
+              className="contact-form-luxury p-4"
+            >
               <div className="row">
                 <div className="col-md-6 mb-3">
                   <input
                     type="text"
+                    name="user_name"
                     className="form-control"
                     placeholder="Your Name"
                     required
@@ -31,6 +73,7 @@ const Contact = () => {
                 <div className="col-md-6 mb-3">
                   <input
                     type="tel"
+                    name="user_phone"
                     className="form-control"
                     placeholder="Mobile Number"
                     pattern="[0-9]{10}"
@@ -43,6 +86,7 @@ const Contact = () => {
               <div className="mb-3">
                 <input
                   type="email"
+                  name="user_email"
                   className="form-control"
                   placeholder="Your Email"
                   required
@@ -52,6 +96,7 @@ const Contact = () => {
               <div className="mb-3">
                 <input
                   type="text"
+                  name="subject"
                   className="form-control"
                   placeholder="Subject"
                 />
@@ -61,12 +106,20 @@ const Contact = () => {
                 <textarea
                   className="form-control"
                   rows="5"
+                  name="message"
                   placeholder="Your Message"
+                  required
                 ></textarea>
               </div>
-
-              <button type="submit" className="btn btn-luxury">
-                Send Message
+              <div className="mb-3 ">
+                <small className="text-muted">*All fields are mandatory</small>
+              </div>
+              <button
+                type="submit"
+                className={`btn btn-luxury ${loading ? "loading" : ""}`}
+                disabled={loading}
+              >
+                {loading ? <span className="loader"></span> : "Send Message"}
               </button>
             </form>
           </div>
@@ -96,6 +149,18 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      {/* SUCCESS POPUP */}
+      {success && (
+        <div className="luxury-popup-overlay">
+          <div className="luxury-popup">
+            <FaCheckCircle className="success-icon" />
+            <h3>Message Sent</h3>
+            <p>
+              Thank you for reaching out. Our team will contact you shortly.
+            </p>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
