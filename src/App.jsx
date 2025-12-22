@@ -14,6 +14,17 @@ import StickyContact from "./components/StickyComponent/StickyComponent";
 import "./App.css";
 import PageNotFound from "./components/PageNotFound";
 
+// Gemstones Pages
+import RubyPage from "./components/Products/Gemstones/Ruby/RubyPage";
+import EmeraldPage from "./components/Products/Gemstones/Emerald/EmeraldPage";
+import PearlPage from "./components/Products/Gemstones/Pearl/PearlPage";
+import RedCoralPage from "./components/Products/Gemstones/RedCoral/RedCoralPage";
+import YellowSapphirePage from "./components/Products/Gemstones/YellowSapphire/YellowSapphirePage";
+import DiamondPage from "./components/Products/Gemstones/Diamond/DiamondPage";
+import BlueSapphirePage from "./components/Products/Gemstones/BlueSapphire/BlueSapphirePage";
+import GarnetPage from "./components/Products/Gemstones/Garnet/GarnetPage";
+import CatsEyePage from "./components/Products/Gemstones/CatsEye/CatsEyePage";
+
 function App() {
   // useEffect(() => {
   //   const disableRightClick = (e) => e.preventDefault();
@@ -49,6 +60,21 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/enquiry" element={<Enquiry />} />
         <Route path="/products" element={<Products />} />
+
+        {/* Gemstones page */}
+        <Route path="/products/ruby" element={<RubyPage />} />
+        <Route path="/products/emerald" element={<EmeraldPage />} />
+        <Route path="/products/pearl" element={<PearlPage />} />
+        <Route path="/products/red-coral" element={<RedCoralPage />} />
+        <Route
+          path="/products/yellow-sapphire"
+          element={<YellowSapphirePage />}
+        />
+        <Route path="/products/diamond" element={<DiamondPage />} />
+        <Route path="/products/blue-sapphire" element={<BlueSapphirePage />} />
+        <Route path="/products/hessonite" element={<GarnetPage />} />
+        <Route path="/products/cats-eye" element={<CatsEyePage />} />
+
         <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Footer />

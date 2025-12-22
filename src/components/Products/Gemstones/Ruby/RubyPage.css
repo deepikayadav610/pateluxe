@@ -1,0 +1,223 @@
+/* PAGE BACKGROUND */
+.ruby-luxury-page {
+  background: linear-gradient(145deg, #f9f7f5, #f2e9e0);
+  padding: 100px 20px;
+  color: #3b2f2f;
+  overflow: hidden;
+  position: relative;
+}
+
+/* HERO SPLIT */
+.ruby-hero-split {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto 80px;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.ruby-hero-left {
+  flex: 1 1 500px;
+  z-index: 2;
+}
+
+.ruby-hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #a00000;
+  margin-bottom: 25px;
+}
+
+.ruby-hero-subtext {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #4e3b36;
+}
+
+/* HERO IMAGE WITH GLOW */
+.ruby-hero-right {
+  flex: 1 1 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-ruby-glow {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 0, 0, 0.25), transparent 70%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+  box-shadow: 0 0 80px rgba(255, 0, 0, 0.35);
+}
+
+.hero-ruby-glow img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.5);
+  transform: rotate(-5deg);
+  transition: transform 0.4s ease;
+}
+
+.hero-ruby-glow:hover img {
+  transform: rotate(0deg) scale(1.05);
+}
+
+/* RUBY RANGE SECTION */
+.ruby-range-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(255, 0, 0, 0.15);
+}
+
+.ruby-range-text h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #a00000;
+  margin-bottom: 15px;
+}
+
+.ruby-range-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #4e3b36;
+}
+
+/* CTA BUTTONS */
+.ruby-range-cta {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-enquiry,
+.btn-whatsapp {
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-enquiry {
+  background: linear-gradient(135deg, #93bebf, #e2cec4);
+  color: #3f3f3f;
+}
+
+.btn-enquiry:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(147, 190, 191, 0.45);
+}
+
+.btn-whatsapp {
+  background: #25d366;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-whatsapp:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
+}
+
+.whatsapp-icon {
+  font-size: 1.2rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .ruby-hero-split {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .ruby-hero-right {
+    margin-bottom: 30px;
+  }
+
+  .ruby-range-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .mt-5 {
+    margin-top: 0rem !important;
+  }
+  .ruby-hero-title {
+    font-size: 2.2rem;
+  }
+
+  .ruby-hero-title span {
+    font-size: 2.5rem;
+  }
+
+  .ruby-ruby-range-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .btn-enquiry,
+  .btn-whatsapp {
+    width: 140px;
+    padding: 12px;
+  }
+
+  /* img */
+  .hero-ruby-glow img {
+    width: 100px;
+    height: 100px;
+  }
+  .hero-ruby-glow {
+    width: 150px;
+    height: 150px;
+  }
+  .ruby-hero-right {
+    flex: 1 1 250px;
+  }
+  .ruby-hero-split {
+    gap: 10px;
+    margin: 0 auto 20px;
+  }
+  .ruby-hero-right {
+    margin-bottom: 0px;
+  }
+  /* text */
+  .ruby-hero-title {
+    font-size: 2.5rem;
+  }
+
+  .ruby-hero-subtext {
+    font-size: 0.9rem;
+    text-align: justify;
+  }
+  .ruby-hero-left {
+    flex: 1 1 auto;
+  }
+  /* btn */
+  .ruby-range-cta {
+    justify-content: center;
+  }
+}

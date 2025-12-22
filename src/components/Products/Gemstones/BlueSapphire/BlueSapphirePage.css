@@ -1,0 +1,223 @@
+/* PAGE BACKGROUND */
+.blue-sapphire-luxury-page {
+  background: linear-gradient(145deg, #f9f7f5, #f2e9e0);
+  padding: 100px 20px;
+  color: #3b2f2f;
+  overflow: hidden;
+  position: relative;
+}
+
+/* HERO SPLIT */
+.blue-sapphire-hero-split {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto 80px;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.blue-sapphire-hero-left {
+  flex: 1 1 500px;
+  z-index: 2;
+}
+
+.blue-sapphire-hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #1f4e79;
+  margin-bottom: 25px;
+}
+
+.blue-sapphire-hero-subtext {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #4e3b36;
+}
+
+/* HERO IMAGE WITH GLOW */
+.blue-sapphire-hero-right {
+  flex: 1 1 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-blue-sapphire-glow {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(31, 78, 121, 0.3), transparent 70%);
+  box-shadow: 0 0 85px rgba(31, 78, 121, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+}
+
+.hero-blue-sapphire-glow img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  box-shadow: 0 0 30px rgba(31, 78, 121, 0.55);
+  transform: rotate(-5deg);
+  transition: transform 0.4s ease;
+}
+
+.hero-blue-sapphire-glow:hover img {
+  transform: rotate(0deg) scale(1.05);
+}
+
+/* blue-sapphire RANGE SECTION */
+.blue-sapphire-range-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(31, 78, 121, 0.2);
+}
+
+.blue-sapphire-range-text h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f4e79;
+  margin-bottom: 15px;
+}
+
+.blue-sapphire-range-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #4e3b36;
+}
+
+/* CTA BUTTONS */
+.blue-sapphire-range-cta {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-enquiry,
+.btn-whatsapp {
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-enquiry {
+  background: linear-gradient(135deg, #93bebf, #e2cec4);
+  color: #3f3f3f;
+}
+
+.btn-enquiry:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(147, 190, 191, 0.45);
+}
+
+.btn-whatsapp {
+  background: #25d366;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-whatsapp:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
+}
+
+.whatsapp-icon {
+  font-size: 1.2rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .blue-sapphire-hero-split {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .blue-sapphire-hero-right {
+    margin-bottom: 30px;
+  }
+
+  .blue-sapphire-range-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .mt-5 {
+    margin-top: 0rem !important;
+  }
+  .blue-sapphire-hero-title {
+    font-size: 2.2rem;
+  }
+
+  .blue-sapphire-hero-title span {
+    font-size: 2.5rem;
+  }
+
+  .blue-sapphire-blue-sapphire-range-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .btn-enquiry,
+  .btn-whatsapp {
+    width: 140px;
+    padding: 12px;
+  }
+
+  /* img */
+  .hero-blue-sapphire-glow img {
+    width: 100px;
+    height: 100px;
+  }
+  .hero-blue-sapphire-glow {
+    width: 150px;
+    height: 150px;
+  }
+  .blue-sapphire-hero-right {
+    flex: 1 1 250px;
+  }
+  .blue-sapphire-hero-split {
+    gap: 10px;
+    margin: 0 auto 20px;
+  }
+  .blue-sapphire-hero-right {
+    margin-bottom: 0px;
+  }
+  /* text */
+  .blue-sapphire-hero-title {
+    font-size: 2.5rem;
+  }
+
+  .blue-sapphire-hero-subtext {
+    font-size: 0.9rem;
+    text-align: justify;
+  }
+  .blue-sapphire-hero-left {
+    flex: 1 1 auto;
+  }
+  /* btn */
+  .blue-sapphire-range-cta {
+    justify-content: center;
+  }
+}

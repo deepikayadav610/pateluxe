@@ -2,6 +2,7 @@ import AboutSection from "./AboutSection/AboutSection.jsx";
 import GemstoneCollection from "./GemstoneCollection/GemstoneCollection.jsx";
 import HeroCarousel from "./HeroCarousel/HeroCarousel.jsx";
 import WhyChoose from "./WhyChoose/WhyChoose.jsx";
+import CustomerReviews from "./CustomerReviews/CustomerReviews.jsx";
 import "./Home.css";
 
 function Home() {
@@ -29,6 +30,7 @@ function Home() {
           </div>
         </div>
       </section>
+      <CustomerReviews />
     </>
   );
 }

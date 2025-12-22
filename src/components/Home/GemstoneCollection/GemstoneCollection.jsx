@@ -10,58 +10,58 @@ import "./GemstoneCollection.css";
 
 const gemstones = [
   {
-    name: "Ruby",
+    name: "Ruby (माणिक - Manik)",
     desc: "Passion & Power",
     color: "linear-gradient(135deg, #ff5f6d, #ffc371)",
     image: "/image/RubyIcon.png",
   },
   {
-    name: "Pearl",
-    desc: "Purity & Wisdom",
-    color: "linear-gradient(135deg, #f8f8f8, #e4e0dc)",
-    image: "/image/PearlIcon.png",
-  },
-  {
-    name: "Red Coral",
-    desc: "Energy & Vitality",
-    color: "linear-gradient(135deg, #ff758c, #ff7eb3)",
-    image: "/image/RedCoralIcon.png",
-  },
-  {
-    name: "Emerald",
-    desc: "Growth & Harmony",
-    color: "linear-gradient(135deg, #56ab2f, #a8e063)",
-    image: "/image/EmraldIcon.png",
-  },
-  {
-    name: "Yellow Sapphire",
-    desc: "Prosperity & Knowledge",
-    color: "linear-gradient(135deg, #f9d423, #ff4e50)",
-    image: "/image/YellowSapphireIcon.png",
-  },
-  {
-    name: "Diamond",
+    name: "Diamond  (हीरा)",
     desc: "Clarity & Strength",
     color: "linear-gradient(135deg, #dfe9f3, #ffffff)",
     image: "/image/DiamondIcon.png",
   },
   {
-    name: "Blue Sapphire",
+    name: "Emerald  (पन्ना - Panna)",
+    desc: "Growth & Harmony",
+    color: "linear-gradient(135deg, #56ab2f, #a8e063)",
+    image: "/image/EmraldIcon.png",
+  },
+  {
+    name: "Yellow Sapphire (पुखराज - Pukhraj)",
+    desc: "Prosperity & Knowledge",
+    color: "linear-gradient(135deg, #f9d423, #ff4e50)",
+    image: "/image/YellowSapphireIcon.png",
+  },
+  {
+    name: "Blue Sapphire  (नीलम - Neelam)",
     desc: "Focus & Discipline",
     color: "linear-gradient(135deg, #396afc, #2948ff)",
     image: "/image/BlueSapphireIcon.png",
   },
   {
-    name: "Hessonite",
+    name: "Pearl (मोती - Moti)",
+    desc: "Purity & Wisdom",
+    color: "linear-gradient(135deg, #f8f8f8, #e4e0dc)",
+    image: "/image/PearlIcon.png",
+  },
+  {
+    name: "Hessonite (गोमेद - Gomad / Garnet)",
     desc: "Confidence & Success",
     color: "linear-gradient(135deg, #ff9966, #ff5e62)",
     image: "/image/HessoniteIcon.png",
   },
   {
-    name: "Cat’s Eye",
+    name: "Cat’s Eye (लहसुनिया - Lehsunia)",
     desc: "Protection & Intuition",
     color: "linear-gradient(135deg, #bdc3c7, #2c3e50)",
     image: "/image/Cat'sEyeIcon.png",
+  },
+  {
+    name: "Red Coral (मूँगा - Munga)",
+    desc: "Energy & Vitality",
+    color: "linear-gradient(135deg, #ff758c, #ff7eb3)",
+    image: "/image/RedCoralIcon.png",
   },
 ];
 
@@ -114,7 +114,12 @@ const GemstoneCollection = () => {
                   <div className="gem-icon">
                     <img src={gem.image} alt={gem.name} />
                   </div>
-                  <h3>{gem.name}</h3>
+                  <h3 className="gemstone-name">
+                    {gem.name.split("(")[0]}
+                    <span className="gemstone-alt">
+                      ({gem.name.split("(")[1]}
+                    </span>
+                  </h3>
                   <p>{gem.desc}</p>
                 </div>
               </div>

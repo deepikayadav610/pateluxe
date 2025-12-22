@@ -166,6 +166,7 @@
 
 .gem-icon img {
   width: 90px;
+  height: 100px;
 }
 
 /* ===============================
@@ -182,6 +183,21 @@
   font-family: "Lato", sans-serif;
   font-size: 0.95rem;
   color: #4e4e4e;
+}
+.gemstone-name {
+  font-family: "Playfair Display", serif;
+  font-size: 1.4rem;
+  color: #3b2f2f;
+  margin-bottom: 3px;
+  line-height: 1.3;
+}
+
+.gemstone-alt {
+  display: block;
+  font-size: 0.95rem;
+  font-family: "Lato", sans-serif;
+  color: #3b2f2f;
+  margin-top: 2px;
 }
 
 /* ===============================

@@ -20,7 +20,6 @@
 
 /* HEADING */
 .section-title {
-  font-family: "Playfair Display", serif;
   font-size: 3.3rem;
   color: #3c2c22;
   letter-spacing: 1.5px;
@@ -114,6 +113,7 @@
 /* GEM IMAGES */
 .gem-icon img {
   width: 110px;
+  height: 110px;
   filter: drop-shadow(0 5px 12px rgba(255, 215, 170, 0.6));
   transition: transform 0.4s ease;
 }
@@ -123,18 +123,28 @@
 }
 
 /* TEXT */
-.gemstone-card h3 {
-  font-family: "Playfair Display", serif;
-  font-size: 1.45rem;
-  color: #352b25;
-  font-weight: 600;
+.gemstone-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
 
-.gemstone-card p {
-  font-family: "Lato", sans-serif;
-  font-size: 1rem;
-  color: #5c514c;
+.product-gemstone-name {
+  font-family: "Playfair Display", serif;
+  font-size: 1.4rem;
+  color: #3b2f2f;
+  margin-bottom: 7px;
+  line-height: 1.3;
 }
+
+.product-gemstone-alt {
+  display: block;
+  font-size: 0.85rem;
+  font-family: "Lato", sans-serif;
+  color: #3b2f2f;
+  margin-top: 2px;
+}
+
 
 /* Hover effect */
 .gemstone-card:hover {
