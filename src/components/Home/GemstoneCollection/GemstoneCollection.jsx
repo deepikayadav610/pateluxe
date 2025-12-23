@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-
+import { Link } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -109,7 +109,15 @@ const GemstoneCollection = () => {
         >
           {gemstones.map((gem, i) => (
             <SwiperSlide key={i}>
-              <div className="gemstone-card" style={{ background: gem.color }}>
+              <div
+                className="gemstone-card clickable-card"
+                style={{ background: gem.color }}
+                onClick={() =>
+                  (window.location.href = `/products/${gem.name
+                    .split(" ")[0]
+                    .toLowerCase()}`)
+                }
+              >
                 <div className="gemstone-glass">
                   <div className="gem-icon">
                     <img src={gem.image} alt={gem.name} />

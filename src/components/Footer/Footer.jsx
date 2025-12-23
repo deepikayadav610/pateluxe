@@ -64,7 +64,7 @@ const Footer = () => {
               <a href="#" className="text-center">
                 <FaFacebookF />
               </a>
-              <a href="#" className="text-center">
+              <a href="https://www.instagram.com/pateluxe_/?utm_source=ig_web_button_share_sheet" className="text-center">
                 <FaInstagram />
               </a>
             </div>

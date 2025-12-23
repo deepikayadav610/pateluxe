@@ -1,6 +1,7 @@
 import React from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import EmeraldGallery from "./EmeraldGallery/EmeraldGallery";
 import "./EmeraldPage.css";
 
 const EmeraldPage = () => {
@@ -9,7 +10,9 @@ const EmeraldPage = () => {
       {/* HERO SPLIT */}
       <div className="emerald-hero-split">
         <div className="emerald-hero-left">
-          <h1 className="emerald-hero-title">Emerald Is Where Elegance Meets Nature</h1>
+          <h1 className="emerald-hero-title">
+            Emerald Is Where Elegance Meets Nature
+          </h1>
           <p className="emerald-hero-subtext">
             Known for its vibrant green hue and enduring beauty, emerald
             represents prosperity, balance, and insight. Pateluxe presents
@@ -52,6 +55,8 @@ const EmeraldPage = () => {
           </a>
         </div>
       </div>
+
+      <EmeraldGallery />
     </section>
   );
 };
