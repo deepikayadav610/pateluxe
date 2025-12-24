@@ -24,6 +24,8 @@ import DiamondPage from "./components/Products/Gemstones/Diamond/DiamondPage";
 import BlueSapphirePage from "./components/Products/Gemstones/BlueSapphire/BlueSapphirePage";
 import GarnetPage from "./components/Products/Gemstones/Garnet/GarnetPage";
 import CatsEyePage from "./components/Products/Gemstones/CatsEye/CatsEyePage";
+import CustomizedJewellery from "./components/Services/CustomizedJewellery/CustomizedJewellery";
+import LotService from "./components/Services/LotService/LotService";
 
 function App() {
   // useEffect(() => {
@@ -74,6 +76,8 @@ function App() {
         <Route path="/products/blue-sapphire" element={<BlueSapphirePage />} />
         <Route path="/products/hessonite" element={<GarnetPage />} />
         <Route path="/products/cats-eye" element={<CatsEyePage />} />
+        <Route path="/services/customized-jewellery" element={<CustomizedJewellery />} />
+        <Route path="/services/lot-service" element={<LotService />} />
 
         <Route path="*" element={<PageNotFound />} />
       </Routes>

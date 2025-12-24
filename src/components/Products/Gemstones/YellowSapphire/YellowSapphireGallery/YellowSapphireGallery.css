@@ -1,0 +1,157 @@
+.garnet-gallery {
+  max-width: 1320px;
+  margin: 90px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 64px;
+}
+
+/* CARD */
+.garnet-showcase-card {
+  background: linear-gradient(160deg, #ffffff 0%, #f6f1e8 100%);
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(123, 30, 36, 0.18),
+    0 40px 80px rgba(123, 30, 36, 0.28);
+
+  transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.garnet-showcase-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(142, 31, 47, 0.32),
+    0 55px 110px rgba(123, 30, 36, 0.45);
+}
+
+/* MEDIA */
+.garnet-media-box {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(
+    circle at 50% 15%,
+    rgba(142, 31, 47, 0.35),
+    rgba(255, 255, 255, 0.06) 65%
+  );
+}
+
+.garnet-media-box::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.35),
+    rgba(255, 255, 255, 0.08) 60%
+  );
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.garnet-media-box img,
+.garnet-media-box video {
+  max-width: 100%;
+  border-radius: 16px;
+  object-fit: contain;
+  animation: fadeLuxury 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.garnet-media-box video {
+  height: 260px;
+}
+
+/* INFO */
+.garnet-info {
+  padding: 13px 30px 20px;
+  text-align: center;
+}
+
+.garnet-info h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: #7b1e24;
+  margin-bottom: 20px;
+}
+
+/* CONTROLS */
+.garnet-controls {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.garnet-controls button {
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(123, 30, 36, 0.55);
+  padding: 9px 16px;
+  border-radius: 40px;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #7b1e24;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  transition: all 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.garnet-controls button:hover {
+  background: #7b1e24;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(142, 31, 47, 0.45);
+}
+
+.garnet-controls button.active {
+  background: linear-gradient(135deg, #7b1e24, #b64b55);
+  color: #ffffff;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.4),
+    0 14px 34px rgba(142, 31, 47, 0.5);
+}
+
+.garnet-controls button:active {
+  transform: scale(0.96);
+}
+
+/* FLOATING VIDEO BUTTONS */
+.garnet-video-controls {
+  position: absolute;
+  right: 18%;
+  bottom: 2px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 5;
+}
+
+.garnet-video-controls button {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(123, 30, 36, 0.95);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 10px 24px rgba(142, 31, 47, 0.5);
+  backdrop-filter: blur(6px);
+  transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.garnet-video-controls button:hover {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, #7b1e24, #b64b55);
+  box-shadow: 0 14px 32px rgba(142, 31, 47, 0.6);
+}
+
+.garnet-video-controls button:active {
+  transform: scale(0.94);
+}

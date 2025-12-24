@@ -1,6 +1,7 @@
 import React from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import GarnetGallery from "./GarnetGallery/GarnetGallery";
 import "./GarnetPage.css";
 
 const GarnetPage = () => {
@@ -56,6 +57,7 @@ const GarnetPage = () => {
           </a>
         </div>
       </div>
+      <GarnetGallery />
     </section>
   );
 };

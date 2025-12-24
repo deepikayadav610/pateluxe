@@ -1,6 +1,7 @@
 import React from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import RedCoralGallery from "./RedCoralGallery/RedCoralGallery";
 import "./RedCoralPage.css";
 
 const RedCoralPage = () => {
@@ -54,6 +55,7 @@ const RedCoralPage = () => {
           </a>
         </div>
       </div>
+      <RedCoralGallery />
     </section>
   );
 };

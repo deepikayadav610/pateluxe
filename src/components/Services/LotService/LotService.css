@@ -1,0 +1,113 @@
+/* ==============================
+   LOT SERVICE HERO – PATELUXE
+============================== */
+
+.lot-hero {
+  position: relative;
+  min-height: 95vh;
+  width: 100%;
+  background-image: url("/image/Lot gemstone image.png");
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  padding: 0 8%;
+}
+
+/* DARK LUXURY OVERLAY */
+.lot-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(10, 10, 10, 0.75),
+    rgba(10, 10, 10, 0.35)
+  );
+  z-index: 1;
+}
+
+/* CONTENT */
+.lot-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 780px;
+  color: #f5f3f1;
+}
+
+/* EYEBROW TEXT */
+.lot-eyebrow {
+  display: inline-block;
+  font-family: "Lato", sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #d6c2b5;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+/* TITLE */
+.lot-hero-title {
+  font-family: "Manifesto", serif;
+  font-size: 3.4rem;
+  line-height: 1.15;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+/* SUBTEXT */
+.lot-hero-subtext {
+  font-family: "Lato", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 720px;
+}
+
+/* ==============================
+   RESPONSIVE
+============================== */
+
+@media (max-width: 1200px) {
+  .lot-hero-title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .lot-hero {
+    padding: 0 6%;
+  }
+
+  .lot-hero-title {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .lot-hero {
+    min-height: 90vh;
+    padding: 0 5%;
+  }
+
+  .lot-hero-title {
+    font-size: 2.2rem;
+  }
+
+  .lot-hero-subtext {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .lot-hero-title {
+    font-size: 1.9rem;
+  }
+
+  .lot-hero-subtext {
+    font-size: 0.95rem;
+  }
+}

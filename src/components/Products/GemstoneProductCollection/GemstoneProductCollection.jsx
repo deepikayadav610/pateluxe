@@ -64,14 +64,14 @@ const GemstoneProductCollection = () => {
     <section className="product-gemstone-section">
       <div className="container text-center">
         <h2 className="section-title">
-          Exceptional Gemstones For Extraordinary Creations
+          Natural Loose Gemstones For Every Creation
         </h2>
         <p className="section-subtitle">
-          Explore a curated selection of natural gemstones, chosen for their
-          beauty, quality, and timeless appeal. At Pateluxe, each stone reflects
-          our commitment to classic jewels and modern luxury. From rare finds to
-          everyday elegance, our collection is crafted to suit every design and
-          purpose.
+          At Pateluxe, we offer a carefully curated selection of loose
+          gemstones, sourced for their natural beauty, quality, and
+          authenticity. Each stone is hand-selected to meet high standards of
+          cut, colour, and clarity. Whether for investment, astrology, or fine
+          jewellery, our loose gemstones reflect timeless elegance.
         </p>
 
         <div className="gemstone-grid">

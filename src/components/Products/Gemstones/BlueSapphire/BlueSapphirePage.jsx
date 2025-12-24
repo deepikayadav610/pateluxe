@@ -1,6 +1,7 @@
 import React from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import BlueSapphireGallery from "./BlueSapphireGallery/BlueSapphireGallery";
 import "./BlueSapphirePage.css";
 
 const BlueSapphirePage = () => {
@@ -53,6 +54,7 @@ const BlueSapphirePage = () => {
           </a>
         </div>
       </div>
+      <BlueSapphireGallery />
     </section>
   );
 };

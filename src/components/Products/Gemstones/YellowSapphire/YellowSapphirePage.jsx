@@ -1,6 +1,7 @@
 import React from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import YellowSapphireGallery from "./YellowSapphireGallery/YellowSapphireGallery";
 import "./YellowSapphirePage.css";
 
 const YellowSapphirePage = () => {
@@ -53,6 +54,7 @@ const YellowSapphirePage = () => {
           </a>
         </div>
       </div>
+      <YellowSapphireGallery />
     </section>
   );
 };

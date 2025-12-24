@@ -122,10 +122,10 @@ function Navbar() {
 
                 <ul className="luxury-dropdown-menu">
                   <li>
-                    <Link to="/services/loose-gemstone">Loose Gemstone</Link>
+                    <Link to="/products">Loose Gemstone</Link>
                   </li>
                   <li>
-                    <Link to="/services/lot">Lot</Link>
+                    <Link to="/services/lot-service">Lot</Link>
                   </li>
                   <li>
                     <Link to="/services/customized-jewellery">
@@ -273,16 +273,13 @@ function Navbar() {
             {serviceOpen && (
               <ul className="sidebar-submenu">
                 <li>
-                  <Link
-                    to="/services/loose-gemstone"
-                    onClick={() => setSidebarOpen(false)}
-                  >
+                  <Link to="/products" onClick={() => setSidebarOpen(false)}>
                     Loose Gemstone
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="/services/lot"
+                    to="/services/lot-service"
                     onClick={() => setSidebarOpen(false)}
                   >
                     Lot
@@ -318,18 +315,6 @@ function Navbar() {
               Enquiry
             </Link>
           </li>
-          {/* {["Home", "About Us", "Products", "Blog", "Contact"].map(
-                        (item, idx) => (
-                            <li key={idx}>
-                                <Link
-                                    to={`/${item === "Home" ? "" : item.toLowerCase().replace(" ", "")}`}
-                                    onClick={() => setSidebarOpen(false)}
-                                >
-                                    {item}
-                                </Link>
-                            </li>
-                        )
-                    )} */}
         </ul>
       </div>
 

@@ -1,62 +1,240 @@
+/* ===========================
+   ABOUT SECTION
+=========================== */
 .about-section {
-    background-color: #f9f8f7;
-    color: #3f3f3f;
+  background-color: #f9f8f7;
+  color: #3f3f3f;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
-.section-tagline {
-    font-family: "Manifesto", serif;
-    color: #93bebf;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    font-size: 0.95rem;
-}
-
+/* SECTION TITLE */
 .section-title {
-    font-family: "Manifesto", serif;
-    font-size: 2.5rem;
-    color: #3f3f3f;
-    font-weight: 600;
+  font-family: "Manifesto", serif;
+  font-size: 2.8rem;
+  color: #3f3f3f;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  text-align: left;
 }
 
+/* TEXT PARAGRAPHS */
 .about-text {
-    font-family: "Lato", sans-serif;
-    font-size: 1.05rem;
-    color: #555;
-    line-height: 1.8;
+  font-family: "Lato", sans-serif;
+  font-size: 1.05rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 20px;
 }
 
+/* BUTTON */
 .btn-about {
-    background-color: #e2cec4;
-    color: #3f3f3f;
-    border: none;
-    padding: 10px 28px;
-    border-radius: 30px;
-    font-family: "Lato", sans-serif;
-    font-weight: 600;
-    transition: all 0.3s ease;
+  background-color: #e2cec4;
+  color: #3f3f3f;
+  border: none;
+  padding: 12px 32px;
+  border-radius: 30px;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
 .btn-about:hover {
-    background-color: #93bebf;
-    color: #fff;
+  background-color: #93bebf;
+  color: #fff;
 }
 
-.about-img-wrapper img {
-    width: 100%;
-    border-radius: 16px;
-    transition: transform 0.5s ease;
+/* ===========================
+   LUXURY SLIDER / SWIPER
+=========================== */
+.luxury-swiper {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 25px;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+  backdrop-filter: blur(4px);
 }
 
-.about-img-wrapper:hover img {
-    transform: scale(1.03);
+/* GEM IMAGE */
+.gem-image {
+  width: 550px;
+  object-fit: contain;
+  border-radius: 20px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.gem-image:hover {
+  transform: scale(1.01) ;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+/* =========================
+   CLICK TO ZOOM MODAL
+========================= */
+.image-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 15, 15, 0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  cursor: zoom-out;
+}
+
+/* CLOSE BUTTON */
+.close-btn {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 10000;
+  transition: opacity 0.3s ease;
+}
+
+.close-btn:hover {
+  opacity: 0.7;
+}
+
+/* ZOOMED IMAGE */
+.zoomed-image {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  cursor: zoom-in;
+  animation: zoomFade 0.4s ease;
+  transition: transform 0.3s ease;
+}
+
+/* Optional hover zoom */
+.zoomed-image:hover {
+  transform: scale(1.05);
+}
+
+/* Smooth animation */
+@keyframes zoomFade {
+  from {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* ===========================
+   SWIPER NAVIGATION BUTTONS
+=========================== */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #3f3f3f;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+/* 
+.swiper-button-next {
+    right: -1%;
+}
+.swiper-button-prev {
+    left: -1%;
+} */
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: #93bebf;
+  color: #3f3f3f;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* MAKE SLIDE CONTENT CLICKABLE */
+.gem-click-wrapper {
+  width: 100%;
+  height: 100%;
+  cursor: zoom-in;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+}
+
+/* Ensure Swiper doesn’t block clicks */
+.swiper-slide {
+  pointer-events: auto !important;
+}
+
+.gem-image {
+  pointer-events: auto;
+}
+
+
+/* ===========================
+   RESPONSIVE ADJUSTMENTS
+=========================== */
+@media (max-width: 1200px) {
+  .luxury-swiper {
+    height: 450px;
+  }
+}
+
+@media (max-width: 992px) {
+  .luxury-swiper {
+    height: 400px;
+  }
+  .gem-image {
+    max-width: 350px;
+  }
 }
 
 @media (max-width: 768px) {
-    .section-title {
-        font-size: 2rem;
-    }
+  .luxury-swiper {
+    height: 300px;
+    padding: 15px;
+  }
 
-    .about-text {
-        font-size: 1rem;
-    }
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
+
+  .btn-about {
+    padding: 10px 28px;
+  }
+
+  .gem-image {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .luxury-swiper {
+    height: 250px;
+    padding: 10px;
+  }
+
+  .section-title {
+    font-size: 1.7rem;
+  }
+
+  .about-text {
+    font-size: 0.95rem;
+  }
 }
