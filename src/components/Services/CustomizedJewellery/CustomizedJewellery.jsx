@@ -1,4 +1,6 @@
 import "./CustomizedJewellery.css";
+import { Link } from "react-router-dom";
+import { FaWhatsapp } from "react-icons/fa";
 
 const CustomizedJewellery = () => {
   return (
@@ -21,7 +23,22 @@ const CustomizedJewellery = () => {
             respect for your vision — reflecting your story and style.
           </p>
 
-          {/* <button className="luxury-cta">Start Your Custom Design</button> */}
+          {/* CTA BUTTONS */}
+          <div className="custom-jewellery-cta">
+            <Link to="/enquiry" className="btn-custom-enquiry">
+              Send Enquiry
+            </Link>
+
+            <a
+              href="https://wa.me/919821874031"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-custom-whatsapp"
+            >
+              <FaWhatsapp />
+              WhatsApp Now
+            </a>
+          </div>
         </div>
 
         <div className="custom-jewellery-image">

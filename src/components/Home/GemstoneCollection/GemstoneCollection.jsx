@@ -109,14 +109,14 @@ const GemstoneCollection = () => {
         >
           {gemstones.map((gem, i) => (
             <SwiperSlide key={i}>
-              <div
+              <Link
+                to={`/products/${gem.name
+                  .split("(")[0]
+                  .trim()
+                  .replace(/\s+/g, "-")
+                  .toLowerCase()}`}
                 className="gemstone-card clickable-card"
                 style={{ background: gem.color }}
-                onClick={() =>
-                  (window.location.href = `/products/${gem.name
-                    .split(" ")[0]
-                    .toLowerCase()}`)
-                }
               >
                 <div className="gemstone-glass">
                   <div className="gem-icon">
@@ -130,7 +130,7 @@ const GemstoneCollection = () => {
                   </h3>
                   <p>{gem.desc}</p>
                 </div>
-              </div>
+              </Link>
             </SwiperSlide>
           ))}
         </Swiper>

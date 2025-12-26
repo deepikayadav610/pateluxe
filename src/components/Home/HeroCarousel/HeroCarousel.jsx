@@ -1,88 +1,81 @@
-import React, { useState } from "react";
-import { Carousel } from "react-bootstrap";
+import { useRef, useEffect, useState } from "react";
 import "./HeroCarousel.css";
 
-const slides = [
-    {
-        image: "/image/homecarousel1.png",
-    },
-    {
-        image: "/image/525b3361-ddee-4258-a428-dc1009430f6e.png",
-    },
-    {
-        image: "/image/35bac178-7289-4127-81fc-cca4be526351.png",
-    },
-];
-
 const HeroCarousel = () => {
-    const [index, setIndex] = useState(0);
+  const video1Ref = useRef(null);
+  const video2Ref = useRef(null);
+  const [active, setActive] = useState(1);
 
-    const handleSelect = (selectedIndex) => {
-        setIndex(selectedIndex);
+  useEffect(() => {
+    const v1 = video1Ref.current;
+    const v2 = video2Ref.current;
+
+    const playSecond = () => {
+      setActive(2);
+      v2.currentTime = 0;
+      v2.play();
     };
 
-    const prevSlide = () => {
-        setIndex(index === 0 ? slides.length - 1 : index - 1);
+    const playFirst = () => {
+      setActive(1);
+      v1.currentTime = 0;
+      v1.play();
     };
 
-    const nextSlide = () => {
-        setIndex(index === slides.length - 1 ? 0 : index + 1);
+    v1.addEventListener("ended", playSecond);
+    v2.addEventListener("ended", playFirst);
+
+    v1.play();
+
+    return () => {
+      v1.removeEventListener("ended", playSecond);
+      v2.removeEventListener("ended", playFirst);
     };
+  }, []);
 
-    return (
-        <section className="hero-carousel position-relative">
-            {/* Carousel Backgrounds */}
-            <Carousel fade controls={false} indicators={false} interval={4000} activeIndex={index} onSelect={handleSelect}>
-                {slides.map((slide, i) => (
-                    <Carousel.Item key={i}>
-                        <div
-                            className="carousel-bg"
-                            style={{ backgroundImage: `url(${slide.image})` }}
-                        ></div>
-                    </Carousel.Item>
-                ))}
-            </Carousel>
+  return (
+    <section className="hero-video">
+      {/* Video 1 */}
+      <video
+        ref={video1Ref}
+        className={`bg-video ${active === 1 ? "active" : ""}`}
+        muted
+        playsInline
+        preload="auto"
+      >
+        <source src="/video/Video 1.mp4" type="video/mp4" />
+      </video>
 
-            {/* Overlay Content */}
-            <div className="carousel-overlay">
-                <div className="carousel-content text-center text-light">
-                    <p className="tagline">Classic Jewels, Modern Luxury.</p>
-                    <h1 className="headline">Find the Beauty in Each Gem.</h1>
+      {/* Video 2 */}
+      <video
+        ref={video2Ref}
+        className={`bg-video ${active === 2 ? "active" : ""}`}
+        muted
+        playsInline
+        preload="auto"
+      >
+        <source src="/video/Video 4.mp4" type="video/mp4" />
+      </video>
 
-                    <div className="hero-buttons">
-                        <a href="/products" className="btn btn-light me-3">
-                            Explore Collections
-                        </a>
-                        <a href="/about" className="btn btn-outline-light">
-                            Discover Our Story
-                        </a>
-                    </div>
-                </div>
-            </div>
+      {/* Overlay */}
+      <div className="hero-overlay">
+        <div className="hero-content">
+          <p className="hero-tagline">Classic Jewels, Modern Luxury.</p>
+          <h1 className="hero-heading">Find the Beauty in Each Gem.</h1>
 
-            {/* Always Visible Custom Indicators */}
-            <div className="carousel-indicators-custom">
-                <button className="nav-arrow left" onClick={prevSlide}>
-                    <span>❮</span>
-                </button>
+          <div className="hero-actions">
+            <a href="/products" className="btn btn-primary-lux">
+              Explore Collections
+            </a>
+            <a href="/about" className="btn btn-outline-lux">
+              Discover Our Story
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                <div className="indicator-circles">
-                    {slides.map((_, i) => (
-                        <div
-                            key={i}
-                            className={`circle-indicator ${i === index ? "active" : ""}`}
-                        >
-                            <div className="inner-glow"></div>
-                        </div>
-                    ))}
-                </div>
-
-                <button className="nav-arrow right" onClick={nextSlide}>
-                    <span>❯</span>
-                </button>
-            </div>
-        </section>
-    );
+  );
 };
 
 export default HeroCarousel;

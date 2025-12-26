@@ -129,6 +129,11 @@
 /* ===============================
    Gemstone Cards 
 ================================ */
+.gemstone-card.clickable-card {
+  text-decoration: none;
+  color: inherit; 
+}
+
 .gemstone-card {
   width: 100%;
   max-width: 250px;
@@ -171,7 +176,7 @@
 ================================ */
 .gem-icon {
   margin-bottom: 7px;
-  animation: gemGlow 3s infinite ease-in-out;
+  animation: gemGlow 2s infinite ease-in-out;
 }
 
 .gem-icon img {
@@ -220,7 +225,7 @@
     opacity: 1;
   }
   50% {
-    transform: scale(1.1);
+    transform: scale(1.15);
     opacity: 0.85;
   }
 }

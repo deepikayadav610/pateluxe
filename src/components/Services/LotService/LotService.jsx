@@ -1,4 +1,6 @@
 import "./LotService.css";
+import { FaWhatsapp } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const LotService = () => {
   return (
@@ -22,6 +24,22 @@ const LotService = () => {
           jewellers, designers, and businesses seeking trusted sourcing at scale
           and long-term business partnerships.
         </p>
+
+        {/* CTA BUTTONS */}
+        <div className="lot-hero-cta" data-aos="fade-up" data-aos-delay="450">
+          <Link to="/enquiry" className="btn-enquiry">
+            Send Enquiry
+          </Link>
+
+          <a
+            href="https://wa.me/919821874031"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-whatsapp"
+          >
+            <FaWhatsapp /> WhatsApp Now
+          </a>
+        </div>
       </div>
     </section>
   );

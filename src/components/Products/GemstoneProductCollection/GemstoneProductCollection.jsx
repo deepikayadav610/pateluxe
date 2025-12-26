@@ -75,29 +75,36 @@ const GemstoneProductCollection = () => {
         </p>
 
         <div className="gemstone-grid">
-          {gemstones.map((gem, i) => (
-            <Link
-              to={`/products/${gem.name.split(" ")[0].toLowerCase()}`}
-              key={i}
-              className="gemstone-link"
-            >
-              <div className="gemstone-card" style={{ background: gem.color }}>
-                <div className="shine"></div>
-                <div className="gemstone-glass">
-                  <div className="gem-icon">
-                    <img src={gem.image} alt={gem.name} loading="lazy" />
+          {gemstones.map((gem, i) => {
+            const gemLink = `/products/${gem.name
+              .split("(")[0] // take main name before parentheses
+              .trim()
+              .replace(/\s+/g, "-") // replace spaces with dashes
+              .toLowerCase()}`;
+
+            return (
+              <Link to={gemLink} key={i} className="gemstone-link">
+                <div
+                  className="gemstone-card"
+                  style={{ background: gem.color }}
+                >
+                  <div className="shine"></div>
+                  <div className="gemstone-glass">
+                    <div className="gem-icon">
+                      <img src={gem.image} alt={gem.name} loading="lazy" />
+                    </div>
+                    <h3 className="product-gemstone-name">
+                      {gem.name.split("(")[0]}
+                      <span className="product-gemstone-alt">
+                        ({gem.name.split("(")[1]}
+                      </span>
+                    </h3>
+                    <p>{gem.desc}</p>
                   </div>
-                  <h3 className="product-gemstone-name">
-                    {gem.name.split("(")[0]}
-                    <span className="product-gemstone-alt">
-                      ({gem.name.split("(")[1]}
-                    </span>
-                  </h3>
-                  <p>{gem.desc}</p>
                 </div>
-              </div>
-            </Link>
-          ))}
+              </Link>
+            );
+          })}
         </div>
       </div>
     </section>

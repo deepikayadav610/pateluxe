@@ -1,6 +1,6 @@
 .lux-review-wrap {
   background: #e2cec460;
-  padding: 120px 20px;
+  padding: 20px;
   text-align: center;
   color: #3f3f3f;
   position: relative;
@@ -10,7 +10,8 @@
 /* LABEL */
 .lux-review-label {
   letter-spacing: 2px;
-  font-size: 12px;
+  font-size: 2.6rem;
+  font-weight: 600;
   text-transform: uppercase;
   color: #7cadad;
   font-weight: 500;
@@ -20,7 +21,7 @@
 .lux-review-slider {
   padding: 20px;
   max-width: 900px;
-  margin: 60px auto 40px;
+  margin: 20px auto;
   position: relative;
   min-height: 200px;
   overflow: hidden;
@@ -45,7 +46,7 @@
 .lux-review-text {
   font-size: 26px;
   line-height: 1.6;
-  font-weight: 300;
+  font-weight: 400;
   opacity: 0;
   position: absolute;
   top: 0;
@@ -69,7 +70,7 @@
   display: flex;
   justify-content: center;
   gap: 30px;
-  margin-top: 40px;
+  margin-bottom: 15px;
 }
 
 .lux-controls button {
@@ -116,5 +117,9 @@
   }
   .lux-review-text {
     font-size: 20px;
+  }
+  /* LABEL */
+  .lux-review-label {
+    font-size: 1.8rem;
   }
 }

@@ -12,21 +12,20 @@ const images = [
 ];
 
 const AboutSection = () => {
-  const [zoomImg, setZoomImg] = useState(null);
+  const [modalImg, setModalImg] = useState(null);
 
   return (
     <>
-      <section className="about-section py-5" id="about">
+      <section className="about-section py-5">
         <div className="container">
-          <div className="row align-items-center">
-            {/* Left Slider */}
-            <div className="col-lg-6 mb-4 mb-lg-0">
+          <div className="row align-items-center g-5">
+            {/* LEFT SLIDER */}
+            <div className="col-lg-5 mb-4 mb-lg-0">
               <Swiper
                 modules={[Navigation, Autoplay]}
                 navigation
-                autoplay={{ delay: 4000, disableOnInteraction: false }}
+                autoplay={{ delay: 1500 }}
                 loop
-                spaceBetween={30}
                 slidesPerView={1}
                 className="luxury-swiper"
               >
@@ -34,38 +33,36 @@ const AboutSection = () => {
                   <SwiperSlide key={index}>
                     <div
                       className="gem-click-wrapper"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        setZoomImg(img);
-                      }}
+                      onClick={() => setModalImg(img)}
                     >
-                      <img
-                        src={img}
-                        alt={`Gemstone ${index + 1}`}
-                        className="gem-image"
-                      />
+                      <img src={img} alt="" className="gem-image" />
                     </div>
                   </SwiperSlide>
                 ))}
               </Swiper>
             </div>
 
-            {/* Right Content */}
+            {/* RIGHT CONTENT (UNCHANGED) */}
             <div className="col-lg-6">
-              <h2 className="section-title mb-3">
-                Find the Beauty in Each Gem.
-              </h2>
-
-              <p className="about-text mb-3">
-               At Pateluxe, you can see the timeless beauty and rarity of expertly crafted gemstones. Every stunning piece is a combination of luxury and trust.
-              </p>
-
+              <h2 className="section-title">Find the Beauty in Each Gem.</h2>
               <p className="about-text">
-                We're excited to showcase our beautiful collection of rare and real gemstones at Pateluxe. They're perfect for people who love timeless beauty, collectors, and anyone else. Each gemstone is a bright sign of our dedication to quality and trust, inviting you to explore the amazing beauty that lies ahead. Come along with us on this exciting journey of style and discovery!
-
+                At Pateluxe, you can see the timeless beauty and rarity of
+                expertly crafted gemstones. Every stunning piece is a
+                combination of luxury and trust.
+              </p>
+              <p className="about-text">
+                We're excited to showcase our beautiful collection of rare and
+                real gemstones at Pateluxe. They're perfect for people who love
+                timeless beauty, collectors, and anyone else. Each gemstone is a
+                bright sign of our dedication to quality and trust, inviting you
+                to explore the amazing beauty that lies ahead. Come along with
+                us on this exciting journey of style and discovery!
               </p>
 
-              <Link to="/customized-jewellery" className="btn btn-about">
+              <Link
+                to="/services/customized-jewellery"
+                className="btn btn-about"
+              >
                 Explore Customized Jewellery
               </Link>
             </div>
@@ -73,13 +70,14 @@ const AboutSection = () => {
         </div>
       </section>
 
-      {/* IMAGE ZOOM MODAL */}
-      {zoomImg && (
-        <div className="image-modal" onClick={() => setZoomImg(null)}>
-          <span className="close-btn" onClick={() => setZoomImg(null)}>
-            &times;
+      {/* IMAGE MODAL */}
+      {modalImg && (
+        <div className="image-modal">
+          <span className="close-btn" onClick={() => setModalImg(null)}>
+            ×
           </span>
-          <img src={zoomImg} alt="Zoomed Gem" className="zoomed-image" />
+
+          <img src={modalImg} alt="Gemstone Preview" className="modal-image" />
         </div>
       )}
     </>
