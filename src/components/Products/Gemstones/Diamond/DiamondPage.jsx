@@ -40,7 +40,7 @@ const DiamondPage = () => {
 
         <div className="diamond-range-cta">
           <Link to="/enquiry" className="btn-enquiry">
-            Enquiry Now
+            Enquire Now
           </Link>
           <a
             href="https://wa.me/919821874031"
@@ -48,7 +48,7 @@ const DiamondPage = () => {
             rel="noopener noreferrer"
             className="btn-whatsapp"
           >
-            <FaWhatsapp className="whatsapp-icon" /> Whatsapp
+            <FaWhatsapp className="whatsapp-icon" /> Whatsapp Now
           </a>
         </div>
       </div>

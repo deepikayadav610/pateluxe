@@ -42,7 +42,7 @@ const CatsEyePage = () => {
 
         <div className="cats-eye-range-cta">
           <Link to="/enquiry" className="btn-enquiry">
-            Enquiry Now
+            Enquire Now
           </Link>
           <a
             href="https://wa.me/919821874031"
@@ -50,7 +50,7 @@ const CatsEyePage = () => {
             rel="noopener noreferrer"
             className="btn-whatsapp"
           >
-            <FaWhatsapp className="whatsapp-icon" /> Whatsapp
+            <FaWhatsapp className="whatsapp-icon" /> Whatsapp Now
           </a>
         </div>
       </div>

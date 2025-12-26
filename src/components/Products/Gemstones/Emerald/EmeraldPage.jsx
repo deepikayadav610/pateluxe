@@ -43,7 +43,7 @@ const EmeraldPage = () => {
 
         <div className="emerald-range-cta">
           <Link to="/enquiry" className="btn-enquiry">
-            Enquiry Now
+            Enquire Now
           </Link>
           <a
             href="https://wa.me/919821874031"
@@ -51,7 +51,7 @@ const EmeraldPage = () => {
             rel="noopener noreferrer"
             className="btn-whatsapp"
           >
-            <FaWhatsapp className="whatsapp-icon" /> Whatsapp
+            <FaWhatsapp className="whatsapp-icon" /> Whatsapp Now
           </a>
         </div>
       </div>

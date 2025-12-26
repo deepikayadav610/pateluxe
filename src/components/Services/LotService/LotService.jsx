@@ -28,7 +28,7 @@ const LotService = () => {
         {/* CTA BUTTONS */}
         <div className="lot-hero-cta" data-aos="fade-up" data-aos-delay="450">
           <Link to="/enquiry" className="btn-enquiry">
-            Send Enquiry
+            Enquire Now
           </Link>
 
           <a

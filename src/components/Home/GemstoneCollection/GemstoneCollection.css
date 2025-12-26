@@ -131,7 +131,7 @@
 ================================ */
 .gemstone-card.clickable-card {
   text-decoration: none;
-  color: inherit; 
+  color: inherit;
 }
 
 .gemstone-card {
@@ -188,19 +188,16 @@
    Text
 ================================ */
 .gemstone-card h3 {
-  font-family: "Playfair Display", serif;
   font-size: 1.4rem;
   color: #3b2f2f;
   margin-bottom: 3px;
 }
 
 .gemstone-card p {
-  font-family: "Lato", sans-serif;
   font-size: 0.95rem;
   color: #4e4e4e;
 }
 .gemstone-name {
-  font-family: "Playfair Display", serif;
   font-size: 1.4rem;
   color: #3b2f2f;
   margin-bottom: 3px;
@@ -210,7 +207,6 @@
 .gemstone-alt {
   display: block;
   font-size: 0.95rem;
-  font-family: "Lato", sans-serif;
   color: #3b2f2f;
   margin-top: 2px;
 }
@@ -251,5 +247,8 @@
   .swiper-button-prev::after,
   .swiper-button-next::after {
     font-size: 12px;
+  }
+  .gemstone-section {
+    padding: 35px 0 10px;
   }
 }

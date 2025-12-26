@@ -93,7 +93,7 @@ const AboutUs = () => {
             ))}
           </div>
 
-          <p className="aboutus-text mt-5 fw-bold">
+          <p className="aboutus-text mt-5 pt-3 fw-bold">
             Pateluxe, Where Every Gemstone Tells a Story of Purity and Trust.
           </p>
         </div>

@@ -26,7 +26,7 @@ const CustomizedJewellery = () => {
           {/* CTA BUTTONS */}
           <div className="custom-jewellery-cta">
             <Link to="/enquiry" className="btn-custom-enquiry">
-              Send Enquiry
+              Enquire Now
             </Link>
 
             <a
