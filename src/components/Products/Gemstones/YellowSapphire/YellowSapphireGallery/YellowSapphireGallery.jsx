@@ -12,7 +12,7 @@ const yellowsapphires = [
     backImg:
       "https://res.cloudinary.com/dhtrmwxyn/image/upload/f_auto,q_auto,w_1600/v1766470247/YS-001-B_erg1sk.jpg",
     video:
-      "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1766555242/Ys-001_wc2tg9.mp4",
+      "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1766555236/Ys-002_etoysl.mp4",
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const yellowsapphires = [
     backImg:
       "https://res.cloudinary.com/dhtrmwxyn/image/upload/f_auto,q_auto,w_1600/v1766470248/YS-002-B_kw3rhi.jpg",
     video:
-      "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1766555236/Ys-002_etoysl.mp4",
+      "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1766555242/Ys-001_wc2tg9.mp4",
   },
   {
     id: 3,

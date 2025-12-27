@@ -10,7 +10,7 @@ const bluesapphires = [
     frontImg:
       "https://res.cloudinary.com/dhtrmwxyn/image/upload/f_auto,q_auto,w_1600/v1766470105/BS-001-F_mzdgbu.jpg",
     video:
-      "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1766555363/Bs-001_vyzosf.mp4",
+      "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1766555364/Bs-002_eqzh9t.mp4",
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const bluesapphires = [
     backImg:
       "https://res.cloudinary.com/dhtrmwxyn/image/upload/f_auto,q_auto,w_1600/v1766470106/BS-002-B_eltnur.jpg",
     video:
-      "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1766555364/Bs-002_eqzh9t.mp4",
+      "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1766555368/Bs-003_mwkael.mp4",
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const bluesapphires = [
     backImg:
       "https://res.cloudinary.com/dhtrmwxyn/image/upload/f_auto,q_auto,w_1600/v1766470107/BS-003-B_bpcbog.jpg",
     video:
-      "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1766555368/Bs-003_mwkael.mp4",
+      "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1766555365/Bs-004_vzisbt.mp4",
   },
   {
     id: 4,
@@ -40,7 +40,7 @@ const bluesapphires = [
     backImg:
       "https://res.cloudinary.com/dhtrmwxyn/image/upload/f_auto,q_auto,w_1600/v1766470096/BS-004-B_esmqty.jpg",
     video:
-      "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1766555365/Bs-004_vzisbt.mp4",
+      "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1766555369/Bs-005_cu7trn.mp4",
   },
   {
     id: 5,
@@ -50,7 +50,7 @@ const bluesapphires = [
     backImg:
       "https://res.cloudinary.com/dhtrmwxyn/image/upload/f_auto,q_auto,w_1600/v1766470101/BS-005-B_k26fpz.jpg",
     video:
-      "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1766555369/Bs-005_cu7trn.mp4",
+      "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1766555378/Bs-006_fv9wsj.mp4",
   },
   {
     id: 6,
@@ -60,7 +60,7 @@ const bluesapphires = [
     backImg:
       "https://res.cloudinary.com/dhtrmwxyn/image/upload/f_auto,q_auto,w_1600/v1766470090/BS-006-B_d0qdab.jpg",
     video:
-      "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1766555378/Bs-006_fv9wsj.mp4",
+      "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1766555371/Bs-007_ll3wbb.mp4",
   },
   {
     id: 7,
@@ -70,7 +70,7 @@ const bluesapphires = [
     backImg:
       "https://res.cloudinary.com/dhtrmwxyn/image/upload/f_auto,q_auto,w_1600/v1766470089/BS-007-B_fjk8vw.jpg",
     video:
-      "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1766555371/Bs-007_ll3wbb.mp4",
+      "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1766555378/Bs-008_rtwt8z.mp4",
   },
   {
     id: 8,
@@ -80,7 +80,7 @@ const bluesapphires = [
     backImg:
       "https://res.cloudinary.com/dhtrmwxyn/image/upload/f_auto,q_auto,w_1600/v1766470103/BS-008-B_uqfqbt.jpg",
     video:
-      "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1766555378/Bs-008_rtwt8z.mp4",
+      "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1766555380/Bs-009_yua9lh.mp4",
   },
   {
     id: 9,
@@ -90,13 +90,13 @@ const bluesapphires = [
     backImg:
       "https://res.cloudinary.com/dhtrmwxyn/image/upload/f_auto,q_auto,w_1600/v1766470104/BS-009-B_qnylgq.jpg",
     video:
-      "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1766555380/Bs-009_yua9lh.mp4",
+      "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1766555380/Bs-010_fmes9d.mp4",
   },
   {
     id: 10,
     name: "Blue Sapphire 10",
     video:
-      "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1766555380/Bs-010_fmes9d.mp4",
+      "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1766555363/Bs-001_vyzosf.mp4",
   },
 ];
 

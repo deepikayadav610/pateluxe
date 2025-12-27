@@ -52,7 +52,7 @@ const emeralds = [
     backImg:
       "https://res.cloudinary.com/dhtrmwxyn/image/upload/f_auto,q_auto,w_1600/v1766469023/EM-005-B_j0gpn1.jpg",
     video:
-      "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1766475137/Em-005_cs99k8.mp4",
+      "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1766475146/Em-006_zf95z5.mp4",
   },
   {
     id: 6,
@@ -62,7 +62,7 @@ const emeralds = [
     backImg:
       "https://res.cloudinary.com/dhtrmwxyn/image/upload/f_auto,q_auto,w_1600/v1766469023/EM-006-B_jtihpr.jpg",
     video:
-      "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1766475146/Em-006_zf95z5.mp4",
+      "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1766475137/Em-005_cs99k8.mp4",
   },
   {
     id: 7,
@@ -136,7 +136,6 @@ const EmeraldCard = ({ item }) => {
       </div>
 
       <div className="emerald-info">
-
         <div className="emerald-controls">
           <button
             className={view === "front" ? "active" : ""}
