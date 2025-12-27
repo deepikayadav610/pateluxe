@@ -32,9 +32,9 @@ const DiamondPage = () => {
         <div className="diamond-range-text">
           <h2>Brilliance in Every Diamond</h2>
           <p>
-            At Pateluxe, our diamonds are available in all shapes, cuts, sizes,
-            and carat weights, perfect for timeless classics and bold statement
-            pieces.
+            At Pateluxe, our diamonds are available in
+            <strong> all shapes, cuts, sizes, and carat weights, </strong>
+            perfect for timeless classics and bold statement pieces.
           </p>
         </div>
 

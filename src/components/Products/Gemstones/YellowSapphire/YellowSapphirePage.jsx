@@ -35,8 +35,9 @@ const YellowSapphirePage = () => {
         <div className="yellow-sapphire-range-text">
           <h2>Your Perfect Yellow Sapphire Awaits</h2>
           <p>
-            At Pateluxe, we offer yellow sapphires in all shapes, cuts, sizes,
-            and carat weights, sourced to bring brilliance to every creation.
+            At Pateluxe, we offer yellow sapphires in
+            <strong> all shapes, cuts, sizes, and carat weights, </strong>
+            sourced to bring brilliance to every creation.
           </p>
         </div>
 

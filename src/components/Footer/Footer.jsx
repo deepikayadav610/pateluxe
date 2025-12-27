@@ -22,25 +22,29 @@ const Footer = () => {
               <li className="home">
                 <a href="/">Home</a>
               </li>
-              <li className="product">
-                <a href="/products">Product</a>
-              </li>
-              <li className="contact">
-                <a href="/contact">Contact Us</a>
+
+              <li className="loose">
+                <a href="/products">Loose Gemstone</a>
               </li>
 
-              <li className="collection">
-                <a href="/products">Collection</a>
+              <li className="lot">
+                <a href="/services/lot-service">Lot / Bulk Gemstones</a>
               </li>
+
               <li className="services">
-                <a href="/services">Services</a>
+                <a href="/services/customized-jewellery">
+                  Customized Jewellery
+                </a>
               </li>
               <li className="enquiry">
                 <a href="/enquiry">Enquiry</a>
               </li>
-
               <li className="about">
                 <a href="/about">About Us</a>
+              </li>
+
+              <li className="contact">
+                <a href="/contact">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -64,7 +68,10 @@ const Footer = () => {
               <a href="#" className="text-center">
                 <FaFacebookF />
               </a>
-              <a href="https://www.instagram.com/pateluxe_/?utm_source=ig_web_button_share_sheet" className="text-center">
+              <a
+                href="https://www.instagram.com/pateluxe_/?utm_source=ig_web_button_share_sheet"
+                className="text-center"
+              >
                 <FaInstagram />
               </a>
             </div>

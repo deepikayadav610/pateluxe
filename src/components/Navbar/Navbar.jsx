@@ -89,10 +89,7 @@ function Navbar() {
                     <Link to="/products/ruby">Ruby</Link>
                   </li>
                   <li>
-                    <Link to="/products/pearl">Pearl</Link>
-                  </li>
-                  <li>
-                    <Link to="/products/red-coral">Red Coral</Link>
+                    <Link to="/products/diamond">Diamond</Link>
                   </li>
                   <li>
                     <Link to="/products/emerald">Emerald</Link>
@@ -101,16 +98,19 @@ function Navbar() {
                     <Link to="/products/yellow-sapphire">Yellow Sapphire</Link>
                   </li>
                   <li>
-                    <Link to="/products/diamond">Diamond</Link>
-                  </li>
-                  <li>
                     <Link to="/products/blue-sapphire">Blue Sapphire</Link>
                   </li>
                   <li>
-                    <Link to="/products/hessonite">Hessonite</Link>
+                    <Link to="/products/pearl">Pearl</Link>
+                  </li>
+                  <li>
+                    <Link to="/products/hessonite">Hessonite / Garnet</Link>
                   </li>
                   <li>
                     <Link to="/products/cats-eye">Cat’s Eye</Link>
+                  </li>
+                  <li>
+                    <Link to="/products/red-coral">Red Coral</Link>
                   </li>
                 </ul>
               </li>
@@ -125,7 +125,7 @@ function Navbar() {
                     <Link to="/products">Loose Gemstone</Link>
                   </li>
                   <li>
-                    <Link to="/services/lot-service">Lot</Link>
+                    <Link to="/services/lot-service">Lot / Bulk Gemstones</Link>
                   </li>
                   <li>
                     <Link to="/services/customized-jewellery">
@@ -195,18 +195,10 @@ function Navbar() {
                 </li>
                 <li>
                   <Link
-                    to="/products/pearl"
+                    to="/products/diamond"
                     onClick={() => setSidebarOpen(false)}
                   >
-                    Pearl
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/products/red-coral"
-                    onClick={() => setSidebarOpen(false)}
-                  >
-                    Red Coral
+                    Diamond
                   </Link>
                 </li>
                 <li>
@@ -225,14 +217,7 @@ function Navbar() {
                     Yellow Sapphire
                   </Link>
                 </li>
-                <li>
-                  <Link
-                    to="/products/diamond"
-                    onClick={() => setSidebarOpen(false)}
-                  >
-                    Diamond
-                  </Link>
-                </li>
+
                 <li>
                   <Link
                     to="/products/blue-sapphire"
@@ -243,10 +228,18 @@ function Navbar() {
                 </li>
                 <li>
                   <Link
+                    to="/products/pearl"
+                    onClick={() => setSidebarOpen(false)}
+                  >
+                    Pearl
+                  </Link>
+                </li>
+                <li>
+                  <Link
                     to="/products/hessonite"
                     onClick={() => setSidebarOpen(false)}
                   >
-                    Hessonite
+                    Hessonite / Garnet
                   </Link>
                 </li>
                 <li>
@@ -255,6 +248,14 @@ function Navbar() {
                     onClick={() => setSidebarOpen(false)}
                   >
                     Cat’s Eye
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/products/red-coral"
+                    onClick={() => setSidebarOpen(false)}
+                  >
+                    Red Coral
                   </Link>
                 </li>
               </ul>
@@ -282,7 +283,7 @@ function Navbar() {
                     to="/services/lot-service"
                     onClick={() => setSidebarOpen(false)}
                   >
-                    Lot
+                    Lot / Bulk Gemstones
                   </Link>
                 </li>
                 <li>

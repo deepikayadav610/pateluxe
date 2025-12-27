@@ -32,9 +32,10 @@ const PearlPage = () => {
         <div className="pearl-range-text">
           <h2>Pearl in Every Form</h2>
           <p>
-            At Pateluxe, we offer pearls in all shapes, sizes, and natural
-            varieties, from delicate accents to statement centrepieces,
-            thoughtfully selected to complement your vision.
+            At Pateluxe, we offer pearls in
+            <strong> all shapes, sizes, and natural varieties, </strong> from
+            delicate accents to statement centrepieces, thoughtfully selected to
+            complement your vision.
           </p>
         </div>
 

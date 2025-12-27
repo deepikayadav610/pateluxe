@@ -35,8 +35,9 @@ const BlueSapphirePage = () => {
         <div className="blue-sapphire-range-text">
           <h2>Every Blue Sapphire, Every Choice</h2>
           <p>
-            Our range spans all shapes, sizes, cuts, and carats, allowing you to
-            select the ideal sapphire for your classic designs.
+            Our range spans
+            <strong> all shapes, sizes, cuts, and carats, </strong> allowing you
+            to select the ideal sapphire for your classic designs.
           </p>
         </div>
 

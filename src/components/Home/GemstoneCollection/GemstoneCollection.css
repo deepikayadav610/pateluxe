@@ -3,7 +3,7 @@
 ================================ */
 .gemstone-section {
   background: linear-gradient(135deg, #fdfcfb, #e2d1c3);
-  padding: 100px 0 10px;
+  padding: 80px 0 10px;
   text-align: center;
   color: #3f3f3f;
   overflow: hidden;
@@ -232,6 +232,9 @@
 @media (max-width: 992px) {
   .gemstone-swiper {
     padding-bottom: 60px;
+  }
+  .gemstone-section {
+    padding: 30px 0 10px;
   }
 }
 

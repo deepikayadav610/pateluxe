@@ -34,9 +34,9 @@ const CatsEyePage = () => {
         <div className="cats-eye-range-text">
           <h2>Mystery and Elegance in Every Lehsunia</h2>
           <p>
-            At Pateluxe, our Cat’s Eye gemstones are available in all shapes,
-            cuts, sizes, and carat weights, crafted to add elegance and energy
-            to your jewellery.
+            At Pateluxe, our Cat’s Eye gemstones are available in
+            <strong> all shapes, cuts, sizes, and carat weights, </strong>
+            crafted to add elegance and energy to your jewellery.
           </p>
         </div>
 

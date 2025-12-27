@@ -188,52 +188,53 @@
 
 /* Default (Desktop) */
 .footer-links-layout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+  row-gap: 14px;
   list-style: none;
   padding: 0;
+  text-align: center;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, max-content);
-  gap: 12px 40px;
-  justify-content: center;
 }
 
-/* Explicit placement */
+/* COLUMN 1 */
 .home {
   grid-column: 1;
   grid-row: 1;
 }
 
-.product {
-  grid-column: 2;
-  grid-row: 1;
-}
-
-.contact {
-  grid-column: 3;
-  grid-row: 1;
-}
-
-.collection {
+.loose {
   grid-column: 1;
   grid-row: 2;
 }
 
+.lot {
+  grid-column: 1;
+  grid-row: 3;
+}
+
 .services {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+/* COLUMN 2 */
+.about {
   grid-column: 2;
   grid-row: 2;
 }
 
 .enquiry {
-  grid-column: 3;
-  grid-row: 2;
+  grid-column: 2;
+  grid-row: 1;
 }
 
-.about {
-  grid-column: 1;
+.contact {
+  grid-column: 2;
   grid-row: 3;
 }
 
-/* Link style */
 /* Link style – same as footer-links */
 .footer-links-layout li {
   margin-bottom: 0.6rem;

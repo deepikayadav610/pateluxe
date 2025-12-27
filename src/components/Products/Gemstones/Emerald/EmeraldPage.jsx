@@ -35,9 +35,10 @@ const EmeraldPage = () => {
         <div className="emerald-range-text">
           <h2>Complete Emerald Collection</h2>
           <p>
-            At Pateluxe, we offer emeralds in all shapes, cuts, sizes, and carat
-            weights, carefully selected to suit both delicate designs and bold
-            statement pieces.
+            At Pateluxe, we offer emeralds in
+            <strong> all shapes, cuts, sizes, and carat weights, </strong>
+            carefully selected to suit both delicate designs and bold statement
+            pieces.
           </p>
         </div>
 

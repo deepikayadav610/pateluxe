@@ -34,9 +34,10 @@ const RubyPage = () => {
         <div className="ruby-range-text">
           <h2>Our Ruby Range</h2>
           <p>
-            At Pateluxe, we offer rubies across all shapes, cuts, sizes, and
-            carat weights, from small accent stones to bold centrepieces,
-            aligning perfectly with your design and intention.
+            At Pateluxe, we offer rubies across
+            <strong> all shapes, cuts, sizes, and carat weights, </strong> from
+            small accent stones to bold centrepieces, aligning perfectly with
+            your design and intention.
           </p>
         </div>
 

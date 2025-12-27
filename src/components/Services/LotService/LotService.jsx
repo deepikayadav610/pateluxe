@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 
 const LotService = () => {
   return (
-    <section className="lot-hero mt-5">
+    <section className="lot-hero ">
       <div className="lot-hero-overlay"></div>
 
       <div className="lot-hero-content">
         <span className="lot-eyebrow" data-aos="fade-up" data-aos-delay="0">
-          Lot Service
+          Lot / Bulk Gemstones
         </span>
 
         <h1 className="lot-hero-title">

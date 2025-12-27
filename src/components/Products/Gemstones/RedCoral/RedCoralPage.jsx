@@ -35,9 +35,9 @@ const RedCoralPage = () => {
         <div className="red-coral-range-text">
           <h2>Red Coral Availability</h2>
           <p>
-            Pateluxe provides red coral across all shapes, cuts, sizes, and
-            carats, making it easy to find the right stone for your design and
-            purpose.
+            Pateluxe provides red coral across
+            <strong> all shapes, cuts, sizes, and carats, </strong> making it
+            easy to find the right stone for your design and purpose.
           </p>
         </div>
 

@@ -38,7 +38,8 @@ const GarnetPage = () => {
         <div className="garnet-range-text">
           <h2>Fiery Elegance in Every Garnet</h2>
           <p>
-            Pateluxe offers garnets in all shapes, cuts, sizes, and carats,
+            Pateluxe offers garnets in
+            <strong> all shapes, cuts, sizes, and carats, </strong>
             ensuring you find the perfect stone for every creation.
           </p>
         </div>
