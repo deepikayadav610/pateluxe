@@ -3,11 +3,19 @@ import GemstoneCollection from "./GemstoneCollection/GemstoneCollection.jsx";
 import HeroCarousel from "./HeroCarousel/HeroCarousel.jsx";
 import WhyChoose from "./WhyChoose/WhyChoose.jsx";
 import CustomerReviews from "./CustomerReviews/CustomerReviews.jsx";
+import SEO from "../SEO.jsx";
 import "./Home.css";
 
 function Home() {
   return (
     <>
+      {/* Minimal SEO */}
+      <SEO
+        title="Pateluxe® | Classic Jewels, Modern Luxury | Certified Gemstones"
+        description="Pateluxe offers authentic, certified gemstones and Navratna stones including Ruby, Emerald, Blue Sapphire, Yellow Sapphire, Diamond & more. Where tradition meets modern luxury."
+        keywords="Pateluxe gemstones, navratna stones, 9 ratna gemstones, certified gemstones India, ruby gemstone, blue sapphire, yellow sapphire"
+        canonical="https://www.pateluxe.com/"
+      />
       <HeroCarousel />
       <GemstoneCollection />
       <AboutSection />

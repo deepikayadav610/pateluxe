@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import SEO from "../SEO";
 import "./Enquiry.css";
 
 export default function Enquiry() {
@@ -45,125 +46,139 @@ export default function Enquiry() {
       );
   };
   return (
-    <section className="enquiry-wrapper">
-      <div className="enquiry-form-box">
-        <h2 className="form-title">Enquiry Form</h2>
+    <>
+      {/* Minimal SEO for Enquiry Page */}
+      <SEO
+        title="Gemstone Enquiry | Buy Certified Gemstones Online | Pateluxe®"
+        description="Submit your gemstone enquiry at Pateluxe. Get expert guidance and pricing for certified natural gemstones including Ruby, Emerald, Sapphire, Diamond, Navratna stones & more."
+        keywords="gemstone enquiry, buy certified gemstones, navratna enquiry, ruby gemstone enquiry, sapphire gemstone price, Pateluxe enquiry"
+        canonical="https://www.pateluxe.com/enquiry"
+      />
+      <section className="enquiry-wrapper">
+        <div className="enquiry-form-box">
+          <h2 className="form-title">Enquiry Form</h2>
 
-        <form ref={formRef} onSubmit={sendEmail} className="form-grid">
-          <div className="input-box">
-            <label>Full Name</label>
-            <input
-              type="text"
-              name="fullName"
-              placeholder="Your full name"
-              required
-            />
-          </div>
+          <form ref={formRef} onSubmit={sendEmail} className="form-grid">
+            <div className="input-box">
+              <label>Full Name</label>
+              <input
+                type="text"
+                name="fullName"
+                placeholder="Your full name"
+                required
+              />
+            </div>
 
-          <div className="input-box">
-            <label>Email Address</label>
-            <input
-              type="email"
-              name="email"
-              placeholder="Enter email"
-              required
-            />
-          </div>
+            <div className="input-box">
+              <label>Email Address</label>
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter email"
+                required
+              />
+            </div>
 
-          <div className="input-box">
-            <label>Phone Number</label>
-            <input
-              type="text"
-              name="phone"
-              placeholder="Contact number"
-              required
-            />
-          </div>
+            <div className="input-box">
+              <label>Phone Number</label>
+              <input
+                type="text"
+                name="phone"
+                placeholder="Contact number"
+                required
+              />
+            </div>
 
-          <div className="input-box">
-            <label>Gemstone of Interest</label>
-            <select name="gemstone" required>
-              <option>Ruby</option>
-              <option>Pearl</option>
-              <option>Red Coral</option>
-              <option>Emerald</option>
-              <option>Yellow Sapphire</option>
-              <option>Diamond</option>
-              <option>Blue Sapphire</option>
-              <option>Hessonite</option>
-              <option>Cat's Eye</option>
-            </select>
-          </div>
+            <div className="input-box">
+              <label>Gemstone of Interest</label>
+              <select name="gemstone" required>
+                <option>Ruby</option>
+                <option>Pearl</option>
+                <option>Red Coral</option>
+                <option>Emerald</option>
+                <option>Yellow Sapphire</option>
+                <option>Diamond</option>
+                <option>Blue Sapphire</option>
+                <option>Hessonite</option>
+                <option>Cat's Eye</option>
+              </select>
+            </div>
 
-          <div className="input-box">
-            <label>Carat Weight / Size (0.10 cents-10 carat)</label>
-            <input type="number" name="carat" placeholder="e.g. 3.5" required />
-          </div>
+            <div className="input-box">
+              <label>Carat Weight / Size (0.10 cents-10 carat)</label>
+              <input
+                type="number"
+                name="carat"
+                placeholder="e.g. 3.5"
+                required
+              />
+            </div>
 
-          <div className="input-box">
-            <label>Shape / Cut</label>
-            <select name="shape" required>
-              <option>Round</option>
-              <option>Oval</option>
-              <option>Cushion</option>
-              <option>Square</option>
-              <option>Rectangle</option>
-              <option>Triangle</option>
-              <option>Heart</option>
-              <option>Spear</option>
-            </select>
-          </div>
+            <div className="input-box">
+              <label>Shape / Cut</label>
+              <select name="shape" required>
+                <option>Round</option>
+                <option>Oval</option>
+                <option>Cushion</option>
+                <option>Square</option>
+                <option>Rectangle</option>
+                <option>Triangle</option>
+                <option>Heart</option>
+                <option>Spear</option>
+              </select>
+            </div>
 
-          <div className="input-box">
-            <label>Budget Range</label>
-            <input
-              type="text"
-              name="budget"
-              placeholder="₹80,000 - ₹3,00,000"
-              required
-            />
-          </div>
+            <div className="input-box">
+              <label>Budget Range</label>
+              <input
+                type="text"
+                name="budget"
+                placeholder="₹80,000 - ₹3,00,000"
+                required
+              />
+            </div>
 
-          <div className="input-box">
-            <label>Certification Required</label>
-            <select name="certification" required>
-              <option>Yes</option>
-              <option>No</option>
-            </select>
-            <p className="note">*Certification charges will be additional</p>
-          </div>
+            <div className="input-box">
+              <label>Certification Required</label>
+              <select name="certification" required>
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+              <p className="note">*Certification charges will be additional</p>
+            </div>
 
-          {/* FORM FOOTER */}
-          <div className="form-footer">
-            <p className="mandatory-note">* All fields are mandatory</p>
+            {/* FORM FOOTER */}
+            <div className="form-footer">
+              <p className="mandatory-note">* All fields are mandatory</p>
 
-            <button type="submit" className="lux-btn" disabled={loading}>
-              {loading ? "Sending..." : "Submit Enquiry"}
-            </button>
-          </div>
-        </form>
-        {success && (
-          <div className="lux-overlay">
-            <div className="lux-modal">
-              <div className="lux-icon">✓</div>
-
-              <h3>Enquiry Submitted</h3>
-              <p>
-                Thank you for reaching out to <strong>Pateluxe</strong>.
-                <br />
-                Our gemstone specialists will contact you shortly.
-              </p>
-
-              <button
-                className="lux-close-btn"
-                onClick={() => setSuccess(false)}
-              >
-                Close
+              <button type="submit" className="lux-btn" disabled={loading}>
+                {loading ? "Sending..." : "Submit Enquiry"}
               </button>
             </div>
-          </div>
-        )}
-      </div>
-    </section>
+          </form>
+          {success && (
+            <div className="lux-overlay">
+              <div className="lux-modal">
+                <div className="lux-icon">✓</div>
+
+                <h3>Enquiry Submitted</h3>
+                <p>
+                  Thank you for reaching out to <strong>Pateluxe</strong>.
+                  <br />
+                  Our gemstone specialists will contact you shortly.
+                </p>
+
+                <button
+                  className="lux-close-btn"
+                  onClick={() => setSuccess(false)}
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          )}
+        </div>
+      </section>
+    </>
   );
 }

@@ -1,10 +1,18 @@
 import "./CustomizedJewellery.css";
 import { Link } from "react-router-dom";
+import SEO from "../../SEO";
 import { FaWhatsapp } from "react-icons/fa";
 
 const CustomizedJewellery = () => {
   return (
     <>
+      {/* SEO for Customized Jewellery Page */}
+      <SEO
+        title="Customized Jewellery Design | Personalized Gemstone Jewellery | Pateluxe®"
+        description="Create personalized jewellery with Pateluxe. From selecting the perfect gemstone to custom designing elegant jewellery, we craft bespoke pieces shaped by your vision and style."
+        keywords="customized jewellery, personalized jewellery design, bespoke gemstone jewellery, custom jewellery india, pateluxe custom jewellery"
+        canonical="https://www.pateluxe.com/customized-jewellery"
+      />
       <section className="custom-jewellery-hero ">
         <div className="custom-jewellery-content">
           <h1>
@@ -20,7 +28,7 @@ const CustomizedJewellery = () => {
             <br />
             <br />
             Together, we craft every design with care, precision, and a deep
-            respect for your vision — reflecting your story and style.
+            respect for your vision, reflecting your story and style.
           </p>
 
           {/* CTA BUTTONS */}
