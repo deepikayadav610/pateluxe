@@ -12,7 +12,7 @@ const garnet = [
     backImg:
       "https://res.cloudinary.com/dhtrmwxyn/image/upload/f_auto,q_auto,w_1600/v1766473751/HS-001-B_w8eqyx.jpg",
     video:
-      "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1766555242/Ys-001_wc2tg9.mp4",
+      "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1766555477/Hs-001_fydj6v.mp4",
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const garnet = [
     backImg:
       "https://res.cloudinary.com/dhtrmwxyn/image/upload/f_auto,q_auto,w_1600/v1766473750/HS-002-B_d9egih.jpg",
     video:
-      "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1766555236/Ys-002_etoysl.mp4",
+      "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1766555475/Hs-002_ipc4w8.mp4",
   },
 ];
 

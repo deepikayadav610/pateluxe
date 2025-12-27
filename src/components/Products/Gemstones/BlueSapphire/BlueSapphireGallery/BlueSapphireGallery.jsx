@@ -80,7 +80,7 @@ const bluesapphires = [
     backImg:
       "https://res.cloudinary.com/dhtrmwxyn/image/upload/f_auto,q_auto,w_1600/v1766470103/BS-008-B_uqfqbt.jpg",
     video:
-      "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1766555380/Bs-009_yua9lh.mp4",
+      "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1766555380/Bs-010_fmes9d.mp4",
   },
   {
     id: 9,
@@ -90,7 +90,7 @@ const bluesapphires = [
     backImg:
       "https://res.cloudinary.com/dhtrmwxyn/image/upload/f_auto,q_auto,w_1600/v1766470104/BS-009-B_qnylgq.jpg",
     video:
-      "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1766555380/Bs-010_fmes9d.mp4",
+      "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1766555380/Bs-009_yua9lh.mp4",
   },
   {
     id: 10,
