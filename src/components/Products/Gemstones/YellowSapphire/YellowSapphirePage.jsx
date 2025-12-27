@@ -35,7 +35,10 @@ const YellowSapphirePage = () => {
 
           <div className="yellow-sapphire-hero-right">
             <div className="hero-yellow-sapphire-glow">
-              <img src="/image/YellowSapphireIcon.png" alt="Yellow Sapphire" />
+              <img
+                src="https://res.cloudinary.com/dhtrmwxyn/image/upload/f_auto,q_auto,w_1600/v1766831329/YellowSapphireIcon_ryvn5z.png"
+                alt="Yellow Sapphire"
+              />
             </div>
           </div>
         </div>

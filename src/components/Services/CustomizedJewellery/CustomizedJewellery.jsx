@@ -50,7 +50,10 @@ const CustomizedJewellery = () => {
         </div>
 
         <div className="custom-jewellery-image">
-          <img src="/image/bg-4.png" alt="Customized Jewellery by Pateluxe" />
+          <img
+            src="https://res.cloudinary.com/dhtrmwxyn/image/upload/f_auto,q_auto,w_1600/v1766831300/bg-4_uyh12k.png"
+            alt="Customized Jewellery by Pateluxe"
+          />
         </div>
       </section>
     </>

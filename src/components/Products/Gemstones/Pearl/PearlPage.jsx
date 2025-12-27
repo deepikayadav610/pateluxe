@@ -32,7 +32,7 @@ const PearlPage = () => {
 
           <div className="pearl-hero-right">
             <div className="hero-pearl-glow">
-              <img src="/image/PearlIcon.png" alt="Pearl" />
+              <img src="https://res.cloudinary.com/dhtrmwxyn/image/upload/f_auto,q_auto,w_1600/v1766830820/PearlIcon_ik86pl.png" alt="Pearl" />
             </div>
           </div>
         </div>

@@ -13,6 +13,7 @@ import "slick-carousel/slick/slick-theme.css";
 import StickyContact from "./components/StickyComponent/StickyComponent";
 import "./App.css";
 import PageNotFound from "./components/PageNotFound";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 // Gemstones Pages
 import RubyPage from "./components/Products/Gemstones/Ruby/RubyPage";

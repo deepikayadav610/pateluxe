@@ -43,7 +43,10 @@ const HeroCarousel = () => {
         playsInline
         preload="auto"
       >
-        <source src="/video/Video 1.mp4" type="video/mp4" />
+        <source
+          src="https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1766830700/Video_1_diokdf.mp4"
+          type="video/mp4"
+        />
       </video>
 
       {/* Video 2 */}
@@ -54,7 +57,10 @@ const HeroCarousel = () => {
         playsInline
         preload="auto"
       >
-        <source src="/video/Video 4.mp4" type="video/mp4" />
+        <source
+          src="https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1766830711/Video_4_kozqtg.mp4"
+          type="video/mp4"
+        />
       </video>
 
       {/* Overlay */}
@@ -74,7 +80,6 @@ const HeroCarousel = () => {
         </div>
       </div>
     </section>
-
   );
 };
 

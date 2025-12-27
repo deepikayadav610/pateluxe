@@ -7,7 +7,7 @@ import "./RubyPage.css";
 const RubyPage = () => {
   return (
     <>
-    {/* SEO for Ruby Page */}
+      {/* SEO for Ruby Page */}
       <SEO
         title="Natural Ruby (माणिक) Gemstone | Certified Sun Stone | Pateluxe®"
         description="Buy natural ruby (Manik) gemstones at Pateluxe. Associated with the Sun, ruby enhances confidence, leadership, vitality, and authority. Certified, authentic, and premium quality."
@@ -33,7 +33,10 @@ const RubyPage = () => {
 
           <div className="ruby-hero-right">
             <div className="hero-ruby-glow">
-              <img src="/image/RubyIcon.png" alt="Ruby" />
+              <img
+                src="https://res.cloudinary.com/dhtrmwxyn/image/upload/f_auto,q_auto,w_1600/v1766831319/RubyIcon_tal33c.png"
+                alt="Ruby"
+              />
             </div>
           </div>
         </div>

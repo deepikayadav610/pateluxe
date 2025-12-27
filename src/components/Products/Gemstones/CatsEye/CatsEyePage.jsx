@@ -33,7 +33,7 @@ const CatsEyePage = () => {
 
           <div className="cats-eye-hero-right">
             <div className="hero-cats-eye-glow">
-              <img src="/image/Cat'sEyeIcon.png" alt="Cats Eye" />
+              <img src="https://res.cloudinary.com/dhtrmwxyn/image/upload/f_auto,q_auto,w_1600/v1766831302/Cat_sEyeIcon_z4hwx7.png" alt="Cats Eye" />
             </div>
           </div>
         </div>

@@ -31,7 +31,7 @@ const DiamondPage = () => {
 
           <div className="diamond-hero-right">
             <div className="hero-diamond-glow">
-              <img src="/image/DiamondIcon.png" alt="Diamond" />
+              <img src="https://res.cloudinary.com/dhtrmwxyn/image/upload/f_auto,q_auto,w_1600/v1766831304/DiamondIcon_uvymia.png" alt="Diamond" />
             </div>
           </div>
         </div>

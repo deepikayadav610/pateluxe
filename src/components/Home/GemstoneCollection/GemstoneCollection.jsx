@@ -13,55 +13,64 @@ const gemstones = [
     name: "Ruby (माणिक - Manik)",
     desc: "Passion & Power",
     color: "linear-gradient(135deg, #ff5f6d, #ffc371)",
-    image: "/image/RubyIcon.png",
+    image:
+      "https://res.cloudinary.com/dhtrmwxyn/image/upload/f_auto,q_auto,w_1600/v1766831319/RubyIcon_tal33c.png",
   },
   {
     name: "Diamond  (हीरा)",
     desc: "Clarity & Strength",
     color: "linear-gradient(135deg, #dfe9f3, #ffffff)",
-    image: "/image/DiamondIcon.png",
+    image:
+      "https://res.cloudinary.com/dhtrmwxyn/image/upload/f_auto,q_auto,w_1600/v1766831304/DiamondIcon_uvymia.png",
   },
   {
     name: "Emerald  (पन्ना - Panna)",
     desc: "Growth & Harmony",
     color: "linear-gradient(135deg, #56ab2f, #a8e063)",
-    image: "/image/EmraldIcon.png",
+    image:
+      "https://res.cloudinary.com/dhtrmwxyn/image/upload/f_auto,q_auto,w_1600/v1766831310/EmraldIcon_d8xof1.png",
   },
   {
     name: "Yellow Sapphire (पुखराज - Pukhraj)",
     desc: "Prosperity & Knowledge",
     color: "linear-gradient(135deg, #f9d423, #ff4e50)",
-    image: "/image/YellowSapphireIcon.png",
+    image:
+      "https://res.cloudinary.com/dhtrmwxyn/image/upload/f_auto,q_auto,w_1600/v1766831329/YellowSapphireIcon_ryvn5z.png",
   },
   {
     name: "Blue Sapphire  (नीलम - Neelam)",
     desc: "Focus & Discipline",
     color: "linear-gradient(135deg, #396afc, #2948ff)",
-    image: "/image/BlueSapphireIcon.png",
+    image:
+      "https://res.cloudinary.com/dhtrmwxyn/image/upload/f_auto,q_auto,w_1600/v1766831301/BlueSapphireIcon_otzamm.png",
   },
   {
     name: "Pearl (मोती - Moti)",
     desc: "Purity & Wisdom",
     color: "linear-gradient(135deg, #f8f8f8, #e4e0dc)",
-    image: "/image/PearlIcon.png",
+    image:
+      "https://res.cloudinary.com/dhtrmwxyn/image/upload/f_auto,q_auto,w_1600/v1766830820/PearlIcon_ik86pl.png",
   },
   {
     name: "Hessonite (गोमेद - Gomad / Garnet)",
     desc: "Confidence & Success",
     color: "linear-gradient(135deg, #ff9966, #ff5e62)",
-    image: "/image/HessoniteIcon.png",
+    image:
+      "https://res.cloudinary.com/dhtrmwxyn/image/upload/f_auto,q_auto,w_1600/v1766831307/HessoniteIcon_pyhsxw.png",
   },
   {
     name: "Cat’s Eye (लहसुनिया - Lehsunia)",
     desc: "Protection & Intuition",
     color: "linear-gradient(135deg, #bdc3c7, #2c3e50)",
-    image: "/image/Cat'sEyeIcon.png",
+    image:
+      "https://res.cloudinary.com/dhtrmwxyn/image/upload/f_auto,q_auto,w_1600/v1766831302/Cat_sEyeIcon_z4hwx7.png",
   },
   {
     name: "Red Coral (मूँगा - Munga)",
     desc: "Energy & Vitality",
     color: "linear-gradient(135deg, #ff758c, #ff7eb3)",
-    image: "/image/RedCoralIcon.png",
+    image:
+      "https://res.cloudinary.com/dhtrmwxyn/image/upload/f_auto,q_auto,w_1600/v1766831327/RedCoralIcon_mjl53y.png",
   },
 ];
 

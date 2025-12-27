@@ -35,7 +35,7 @@ const GarnetPage = () => {
           <div className="garnet-hero-right">
             <div className="hero-garnet-glow">
               <img
-                src="/image/HessoniteIcon.png"
+                src="https://res.cloudinary.com/dhtrmwxyn/image/upload/f_auto,q_auto,w_1600/v1766831307/HessoniteIcon_pyhsxw.png"
                 alt="Garnet/ Gomad/ Hessonite"
               />
             </div>

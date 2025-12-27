@@ -51,7 +51,10 @@ const AboutUs = () => {
         {/* Our Story – Luxury Hero */}
         <section className="story-hero">
           <div className="story-bg">
-            <img src="/image/homecarousel1.png" alt="Pateluxe Our Story" />
+            <img
+              src="https://res.cloudinary.com/dhtrmwxyn/image/upload/f_auto,q_auto,w_1600/v1766831309/homecarousel1_jli1da.png"
+              alt="Pateluxe Our Story"
+            />
           </div>
 
           <div className="story-content">

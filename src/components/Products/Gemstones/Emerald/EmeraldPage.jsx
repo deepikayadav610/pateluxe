@@ -35,7 +35,7 @@ const EmeraldPage = () => {
 
           <div className="emerald-hero-right">
             <div className="hero-emerald-glow">
-              <img src="/image/EmraldIcon.png" alt="Emerald" />
+              <img src="https://res.cloudinary.com/dhtrmwxyn/image/upload/f_auto,q_auto,w_1600/v1766831310/EmraldIcon_d8xof1.png" alt="Emerald" />
             </div>
           </div>
         </div>

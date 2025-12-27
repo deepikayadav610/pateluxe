@@ -34,7 +34,7 @@ const RedCoralPage = () => {
 
           <div className="red-coral-hero-right">
             <div className="hero-red-coral-glow">
-              <img src="/image/RedCoralIcon.png" alt="Red Coral" />
+              <img src="https://res.cloudinary.com/dhtrmwxyn/image/upload/f_auto,q_auto,w_1600/v1766831327/RedCoralIcon_mjl53y.png" alt="Red Coral" />
             </div>
           </div>
         </div>

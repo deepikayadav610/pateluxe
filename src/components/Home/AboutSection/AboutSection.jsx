@@ -7,8 +7,8 @@ import "swiper/css/navigation";
 import "./AboutSection.css";
 
 const images = [
-  "/image/Gemstone with zodiac Image.png",
-  "/image/Hand Image.png",
+  "https://res.cloudinary.com/dhtrmwxyn/image/upload/f_auto,q_auto,w_1600/v1766831310/Gemstone_with_zodiac_Image_t7njvv.png",
+  "https://res.cloudinary.com/dhtrmwxyn/image/upload/f_auto,q_auto,w_1600/v1766831330/Hand_Image_jfxvjh.png",
 ];
 
 const AboutSection = () => {

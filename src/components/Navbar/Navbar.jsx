@@ -44,7 +44,7 @@ function Navbar() {
             to="/"
           >
             <img
-              src="/image/pateluxe-dark.png"
+              src="https://res.cloudinary.com/dhtrmwxyn/image/upload/f_auto,q_auto,w_1600/v1766831316/pateluxe-dark_bhx9qp.png"
               alt="Pateluxe logo"
               width={150}
               height={65}

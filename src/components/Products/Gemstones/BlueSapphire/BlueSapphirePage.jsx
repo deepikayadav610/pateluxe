@@ -35,7 +35,7 @@ const BlueSapphirePage = () => {
 
           <div className="blue-sapphire-hero-right">
             <div className="hero-blue-sapphire-glow">
-              <img src="/image/BlueSapphireIcon.png" alt="Blue Sapphire" />
+              <img src="https://res.cloudinary.com/dhtrmwxyn/image/upload/f_auto,q_auto,w_1600/v1766831301/BlueSapphireIcon_otzamm.png" alt="Blue Sapphire" />
             </div>
           </div>
         </div>
