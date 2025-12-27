@@ -276,13 +276,14 @@
 }
 
 /* ==============================
-   SMALL HEIGHT DEVICES (iPhone SE)
+   SMALL HEIGHT DEVICES (SHORT SCREENS)
 ============================== */
 
-@media (max-width: 390px) and (max-height: 700px) {
+@media (max-width: 420px) and (max-height: 740px) {
   .lot-hero {
-    min-height: auto;
-    padding: 90px 5% 60px;
+    min-height: unset;
+    height: auto;
+    padding: 110px 5% 70px;
     align-items: flex-start;
   }
 
@@ -306,6 +307,6 @@
   }
 
   .lot-hero-cta {
-    margin-top: 24px;
+    margin-top: 22px;
   }
 }
