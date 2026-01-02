@@ -106,12 +106,40 @@ const YellowSapphireCard = ({ item }) => {
 
   const [isMuted, setIsMuted] = useState(true);
   const videoRef = useRef(null);
+  const [isFullscreen, setIsFullscreen] = useState(false);
+
+  const openFullscreen = () => {
+    if (!videoRef.current) return;
+
+    if (videoRef.current.requestFullscreen) {
+      videoRef.current.requestFullscreen();
+    }
+
+    setIsFullscreen(true);
+  };
 
   const toggleMute = () => {
     if (!videoRef.current) return;
     videoRef.current.muted = !isMuted;
     setIsMuted(!isMuted);
   };
+
+  useEffect(() => {
+    const handleFullscreenChange = () => {
+      if (!document.fullscreenElement) {
+        setIsFullscreen(false);
+      }
+      if (!document.fullscreenElement) {
+        setIsFullscreen(false);
+        videoRef.current?.pause();
+      }
+    };
+
+    document.addEventListener("fullscreenchange", handleFullscreenChange);
+
+    return () =>
+      document.removeEventListener("fullscreenchange", handleFullscreenChange);
+  }, []);
 
   useEffect(() => {
     if (view === "front" && !item.frontImg) setView(getInitialView());
@@ -131,14 +159,25 @@ const YellowSapphireCard = ({ item }) => {
               autoPlay
               loop
               playsInline
+              controls={false}
+              controlsList="nodownload noplaybackrate nofullscreen"
             />
+
+            {isFullscreen && (
+              <button
+                className="blue-sapphire-close-btn"
+                onClick={() => document.exitFullscreen()}
+              >
+                ✕
+              </button>
+            )}
 
             <div className="yellow-sapphire-video-controls">
               <button onClick={toggleMute}>
                 {isMuted ? <FaVolumeMute /> : <FaVolumeUp />}
               </button>
 
-              <button onClick={() => videoRef.current?.requestFullscreen()}>
+              <button onClick={openFullscreen}>
                 <FaExpand />
               </button>
             </div>

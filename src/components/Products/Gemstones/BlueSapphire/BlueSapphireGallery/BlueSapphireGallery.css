@@ -63,6 +63,31 @@
   height: 260px;
 }
 
+.blue-sapphire-close-btn {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  z-index: 9999;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(31, 78, 121, 0.95);
+  color: #ffffff;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+}
+
+/* Active / click */
+.blue-sapphire-close-btn:active {
+  transform: scale(0.95);
+}
+
 @keyframes fadeLuxury {
   from {
     opacity: 0;

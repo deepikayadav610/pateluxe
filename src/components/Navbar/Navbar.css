@@ -227,13 +227,13 @@
   right: 0;
 }
 
-.close-btn {
+.sidebar-close-btn {
   position: sticky;
   top: 20px;
   margin-left: auto;
   margin-right: 25px;
   display: block;
-  font-size: 1.8rem;
+  font-size: 2.8rem;
   color: #6d5c4d;
   background: none;
   border: none;
@@ -242,7 +242,7 @@
   z-index: 2;
 }
 
-.close-btn:hover {
+.sidebar-close-btn:hover {
   transform: rotate(90deg);
   color: #bfa67a;
 }

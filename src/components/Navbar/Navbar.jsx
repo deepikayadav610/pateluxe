@@ -152,7 +152,7 @@ function Navbar() {
 
       {/* Luxury Sidebar */}
       <div className={`luxury-sidebar ${sidebarOpen ? "open" : ""}`}>
-        <button className="close-btn" onClick={() => setSidebarOpen(false)}>
+        <button className="sidebar-close-btn" onClick={() => setSidebarOpen(false)}>
           &times;
         </button>
         <ul className="sidebar-links">
