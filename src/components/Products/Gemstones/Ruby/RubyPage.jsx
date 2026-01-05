@@ -12,7 +12,7 @@ const RubyPage = () => {
         title="Natural Ruby (माणिक) Gemstone | Certified Sun Stone | Pateluxe®"
         description="Buy natural ruby (Manik) gemstones at Pateluxe. Associated with the Sun, ruby enhances confidence, leadership, vitality, and authority. Certified, authentic, and premium quality."
         keywords="ruby gemstone, manik stone, sun gemstone, natural ruby india, certified ruby, manik ratna, pateluxe ruby"
-        canonical="https://www.pateluxe.com/products/ruby"
+        canonical="https://pateluxe.com/products/ruby"
       />
       <section className="ruby-luxury-page mt-5">
         {/* HERO SPLIT */}

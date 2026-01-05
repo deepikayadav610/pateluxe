@@ -13,7 +13,7 @@ const BlueSapphirePage = () => {
         title="Blue Sapphire (नीलम) Gemstone | Certified Neelam Stone | Pateluxe®"
         description="Explore certified Blue Sapphire (नीलम / Neelam) gemstones at Pateluxe. Known for discipline, focus, and protection, our natural blue sapphires are ethically sourced and lab-certified."
         keywords="blue sapphire gemstone, neelam stone, certified blue sapphire, buy neelam gemstone online, saturn gemstone, pateluxe blue sapphire"
-        canonical="https://www.pateluxe.com/products/blue-sapphire"
+        canonical="https://pateluxe.com/products/blue-sapphire"
       />
 
       <section className="blue-sapphire-luxury-page mt-5">

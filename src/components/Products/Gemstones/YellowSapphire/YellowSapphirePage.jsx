@@ -13,7 +13,7 @@ const YellowSapphirePage = () => {
         title="Natural Yellow Sapphire (पुखराज) Gemstone | Certified Jupiter Stone | Pateluxe®"
         description="Buy natural yellow sapphire (Pukhraj) gemstones at Pateluxe. Associated with Jupiter, yellow sapphire enhances wisdom, prosperity, financial growth, and positivity. Certified and authentic quality."
         keywords="yellow sapphire gemstone, pukhraj stone, jupiter gemstone, natural yellow sapphire india, certified pukhraj, pukhraj ratna, pateluxe yellow sapphire"
-        canonical="https://www.pateluxe.com/products/yellow-sapphire"
+        canonical="https://pateluxe.com/products/yellow-sapphire"
       />
 
       <section className="yellow-sapphire-luxury-page mt-5">

@@ -12,7 +12,7 @@ const CatsEyePage = () => {
         title="Cat’s Eye (Lehsunia) Gemstone | Certified Lahsunia Stone | Pateluxe®"
         description="Discover certified Cat’s Eye (Lehsunia / Lahsunia) gemstones at Pateluxe. Known for protection, intuition, and clarity, our natural stones are ethically sourced and lab-certified."
         keywords="cat's eye gemstone, lehsunia stone, lahusuniyā gemstone, certified cat eye stone, ketu gemstone, pateluxe cat's eye"
-        canonical="https://www.pateluxe.com/products/cats-eye"
+        canonical="https://pateluxe.com/products/cats-eye"
       />
       <section className="cats-eye-luxury-page mt-5">
         {/* HERO SPLIT */}

@@ -29,28 +29,28 @@ import CustomizedJewellery from "./components/Services/CustomizedJewellery/Custo
 import LotService from "./components/Services/LotService/LotService";
 
 function App() {
-  // useEffect(() => {
-  //   const disableRightClick = (e) => e.preventDefault();
-  //   document.addEventListener("contextmenu", disableRightClick);
+  useEffect(() => {
+    const disableRightClick = (e) => e.preventDefault();
+    document.addEventListener("contextmenu", disableRightClick);
 
-  //   return () => {
-  //     document.removeEventListener("contextmenu", disableRightClick);
-  //   };
-  // }, []);
-  // useEffect(() => {
-  //   const disableKeys = (e) => {
-  //     if (
-  //       (e.ctrlKey &&
-  //         ["c", "x", "s", "u", "p"].includes(e.key.toLowerCase())) ||
-  //       e.key === "F12"
-  //     ) {
-  //       e.preventDefault();
-  //     }
-  //   };
+    return () => {
+      document.removeEventListener("contextmenu", disableRightClick);
+    };
+  }, []);
+  useEffect(() => {
+    const disableKeys = (e) => {
+      if (
+        (e.ctrlKey &&
+          ["c", "x", "s", "u", "p"].includes(e.key.toLowerCase())) ||
+        e.key === "F12"
+      ) {
+        e.preventDefault();
+      }
+    };
 
-  //   document.addEventListener("keydown", disableKeys);
-  //   return () => document.removeEventListener("keydown", disableKeys);
-  // }, []);
+    document.addEventListener("keydown", disableKeys);
+    return () => document.removeEventListener("keydown", disableKeys);
+  }, []);
 
   return (
     <Router>

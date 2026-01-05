@@ -13,7 +13,7 @@ const RedCoralPage = () => {
         title="Natural Red Coral (मूँगा) Gemstone | Certified Mars Stone | Pateluxe®"
         description="Buy natural red coral (Moonga) gemstones at Pateluxe. Associated with Mars, red coral enhances courage, strength, and vitality. Certified, authentic, and ethically sourced."
         keywords="red coral gemstone, moonga stone, mars gemstone, natural red coral india, certified red coral, moonga ratna, pateluxe coral"
-        canonical="https://www.pateluxe.com/products/red-coral"
+        canonical="https://pateluxe.com/products/red-coral"
       />
       <section className="red-coral-luxury-page mt-5">
         {/* HERO SPLIT */}

@@ -12,7 +12,7 @@ const DiamondPage = () => {
         title="Diamond (हीरा) Gemstone | Certified Natural Diamond | Pateluxe®"
         description="Explore certified natural Diamond (हीरा) gemstones at Pateluxe. Known for strength, clarity, beauty, and luxury, our diamonds are ethically sourced and lab-certified."
         keywords="diamond gemstone, natural diamond, certified diamond India, buy diamond online, venus gemstone, pateluxe diamond"
-        canonical="https://www.pateluxe.com/products/diamond"
+        canonical="https://pateluxe.com/products/diamond"
       />
       <section className="diamond-luxury-page mt-5">
         {/* HERO SPLIT */}

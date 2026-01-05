@@ -12,7 +12,7 @@ const PearlPage = () => {
         title="Natural Pearl (मोती) Gemstone | Certified Moon Stone | Pateluxe®"
         description="Discover natural pearl (Moti) gemstones at Pateluxe. Associated with the Moon, pearls promote peace, emotional balance, and elegance. Ethically sourced and certified."
         keywords="pearl gemstone, moti stone, moon gemstone, natural pearl india, certified pearl, white pearl gemstone, pateluxe pearls"
-        canonical="https://www.pateluxe.com/products/pearl"
+        canonical="https://pateluxe.com/products/pearl"
       />
       
       <section className="pearl-luxury-page mt-5">

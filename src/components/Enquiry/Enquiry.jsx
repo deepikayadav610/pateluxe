@@ -52,7 +52,7 @@ export default function Enquiry() {
         title="Gemstone Enquiry | Buy Certified Gemstones Online | Pateluxe®"
         description="Submit your gemstone enquiry at Pateluxe. Get expert guidance and pricing for certified natural gemstones including Ruby, Emerald, Sapphire, Diamond, Navratna stones & more."
         keywords="gemstone enquiry, buy certified gemstones, navratna enquiry, ruby gemstone enquiry, sapphire gemstone price, Pateluxe enquiry"
-        canonical="https://www.pateluxe.com/enquiry"
+        canonical="https://pateluxe.com/enquiry"
       />
       <section className="enquiry-wrapper">
         <div className="enquiry-form-box">

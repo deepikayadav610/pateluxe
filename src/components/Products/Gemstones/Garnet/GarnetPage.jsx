@@ -13,7 +13,7 @@ const GarnetPage = () => {
         title="Garnet (गोमेद) Gemstone | Natural Hessonite Stone | Pateluxe®"
         description="Explore premium Garnet (Gomad / Hessonite) gemstones at Pateluxe. Known for courage, clarity, and confidence, our garnets are natural, certified, and ethically sourced."
         keywords="garnet gemstone, gomed stone, hessonite gemstone, rahu gemstone, natural garnet india, certified gomad, pateluxe garnet"
-        canonical="https://www.pateluxe.com/products/garnet"
+        canonical="https://pateluxe.com/products/garnet"
       />
       <section className="garnet-luxury-page mt-5">
         {/* HERO SPLIT */}

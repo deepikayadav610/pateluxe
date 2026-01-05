@@ -13,7 +13,7 @@ const EmeraldPage = () => {
         title="Emerald (पन्ना) Gemstone | Natural Certified Emerald | Pateluxe®"
         description="Discover premium natural Emerald (पन्ना) gemstones at Pateluxe. Known for prosperity, intelligence, and clarity, our emeralds are ethically sourced and certified."
         keywords="emerald gemstone, panna stone, natural emerald, certified emerald India, mercury gemstone, buy emerald online, pateluxe emerald"
-        canonical="https://www.pateluxe.com/products/emerald"
+        canonical="https://pateluxe.com/products/emerald"
       />
 
       <section className="emerald-luxury-page mt-5">

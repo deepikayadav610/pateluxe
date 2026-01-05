@@ -11,7 +11,7 @@ const LotService = () => {
         title="Bulk Gemstone Lots for Jewellery | Wholesale Gemstones | Pateluxe"
         description="Pateluxe offers premium gemstone lots and bulk gemstone supply for jewellers and designers. Professionally curated lots with consistency in colour, cut, clarity, and grading."
         keywords="bulk gemstones, gemstone lots, wholesale gemstones, gemstone lot suppliers india, pateluxe bulk gemstones"
-        canonical="https://www.pateluxe.com/lot-service"
+        canonical="https://pateluxe.com/lot-service"
       />
 
       <section className="lot-hero ">

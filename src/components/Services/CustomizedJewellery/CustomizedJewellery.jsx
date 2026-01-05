@@ -11,7 +11,7 @@ const CustomizedJewellery = () => {
         title="Customized Jewellery Design | Personalized Gemstone Jewellery | Pateluxe®"
         description="Create personalized jewellery with Pateluxe. From selecting the perfect gemstone to custom designing elegant jewellery, we craft bespoke pieces shaped by your vision and style."
         keywords="customized jewellery, personalized jewellery design, bespoke gemstone jewellery, custom jewellery india, pateluxe custom jewellery"
-        canonical="https://www.pateluxe.com/customized-jewellery"
+        canonical="https://pateluxe.com/customized-jewellery"
       />
       <section className="custom-jewellery-hero ">
         <div className="custom-jewellery-content">

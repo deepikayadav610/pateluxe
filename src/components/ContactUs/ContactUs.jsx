@@ -48,7 +48,7 @@ const Contact = () => {
         title="Contact Pateluxe | Certified Gemstones & Navratna Stones"
         description="Get in touch with Pateluxe. Reach out for inquiries, orders, or guidance on authentic, certified gemstones and Navratna stones."
         keywords="Pateluxe contact, certified gemstones contact, Navratna stones inquiry, gemstone store India contact"
-        canonical="https://www.pateluxe.com/contact"
+        canonical="https://pateluxe.com/contact"
       />
       <section className="contact-luxury">
         <div className="container py-5">

@@ -44,7 +44,7 @@ const AboutUs = () => {
         title="About Pateluxe | Trusted Source for Certified Gemstones"
         description="Discover Pateluxe — a trusted online destination for authentic, certified gemstones, Navratna stones, and healing crystals in India. Built on decades of gemstone expertise."
         keywords="Pateluxe about, certified gemstones India, Navratna stones, authentic gemstones, gemstone store India"
-        canonical="https://www.pateluxe.com/about"
+        canonical="https://pateluxe.com/about"
       />
       <section className="aboutus-premium">
         {/* Hero / Our Story */}
