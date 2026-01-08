@@ -2,6 +2,7 @@ import "./LotService.css";
 import { FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import SEO from "../../SEO";
+import LotVideoGallery from "./LotGallery/LotGallery";
 
 const LotService = () => {
   return (
@@ -52,6 +53,8 @@ const LotService = () => {
           </div>
         </div>
       </section>
+
+      <LotVideoGallery />
     </>
   );
 };

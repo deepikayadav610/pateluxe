@@ -1,0 +1,178 @@
+/* GALLERY WRAPPER */
+.ruby-gallery {
+  max-width: 1320px;
+  margin: 90px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 64px;
+  justify-items: center;
+}
+
+/* CARD */
+.ruby-showcase-card {
+  width: 100%;
+  max-width: 380px;
+  background: linear-gradient(160deg, #ffffff 0%, #f2e9e0 100%);
+  border-radius: 28px;
+  overflow: hidden;
+
+  box-shadow: 0 12px 30px rgba(160, 0, 0, 0.12),
+    0 40px 90px rgba(160, 0, 0, 0.22);
+
+  transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.ruby-showcase-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 45px rgba(160, 0, 0, 0.22),
+    0 60px 120px rgba(160, 0, 0, 0.35);
+}
+
+/* MEDIA */
+.ruby-media-box {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: radial-gradient(
+    circle at 50% 15%,
+    rgba(160, 0, 0, 0.18),
+    rgba(255, 255, 255, 0.1) 65%
+  );
+}
+
+.ruby-media-box::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.45),
+    rgba(255, 255, 255, 0.1) 60%
+  );
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.ruby-media-box img,
+.ruby-media-box video {
+  max-width: 100%;
+  border-radius: 16px;
+  object-fit: contain;
+  animation: fadeLuxury 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.ruby-media-box video {
+  height: 260px;
+}
+
+/* INFO */
+.ruby-info {
+  padding: 16px 30px 24px;
+  text-align: center;
+}
+
+.ruby-info h4 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #a00000;
+  margin-bottom: 20px;
+}
+
+/* CONTROLS */
+.ruby-controls {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.ruby-controls button {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(160, 0, 0, 0.35);
+  padding: 9px 16px;
+  border-radius: 40px;
+  font-size: 0.72rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #4e3b36;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  transition: all 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.ruby-controls button:hover {
+  background: #a00000;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(160, 0, 0, 0.35);
+}
+
+.ruby-controls button.active {
+  background: linear-gradient(135deg, #a00000, #c94a6a);
+  color: #ffffff;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.45),
+    0 14px 34px rgba(160, 0, 0, 0.4);
+}
+
+.ruby-controls button:active {
+  transform: scale(0.96);
+}
+
+/* FLOATING VIDEO BUTTONS */
+.ruby-video-controls {
+  position: absolute;
+  right: 18%;
+  bottom: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 5;
+}
+
+.ruby-video-controls button {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(160, 0, 0, 0.95);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  box-shadow: 0 10px 24px rgba(160, 0, 0, 0.45);
+  backdrop-filter: blur(6px);
+
+  transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.ruby-video-controls button:hover {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, #a00000, #d36a7a);
+  box-shadow: 0 14px 32px rgba(160, 0, 0, 0.6);
+}
+
+.ruby-video-controls button:active {
+  transform: scale(0.94);
+}
+
+/* LUXURY FADE */
+@keyframes fadeLuxury {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}

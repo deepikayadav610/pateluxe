@@ -3,6 +3,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import SEO from "../../../SEO";
 import "./RubyPage.css";
+import RubyGallery from "./RubyGallery/RubyGallery";
 
 const RubyPage = () => {
   return (
@@ -70,6 +71,7 @@ const RubyPage = () => {
             </a>
           </div>
         </div>
+        <RubyGallery/>
       </section>
     </>
   );
