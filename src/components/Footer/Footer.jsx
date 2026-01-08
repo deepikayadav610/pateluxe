@@ -65,7 +65,10 @@ const Footer = () => {
           <div className="col-md-4">
             <h5 className="footer-title">Follow Us</h5>
             <div className="d-flex justify-content-center gap-3 social-icons">
-              <a href="#" className="text-center">
+              <a
+                href="https://www.facebook.com/profile.php?id=61585979606213"
+                className="text-center"
+              >
                 <FaFacebookF />
               </a>
               <a
