@@ -31,7 +31,10 @@ const CustomizedJewelleryGallery = () => {
         <h2 className="luxury-gallery-title">
           Customized Jewellery <span>Gallery</span>
         </h2>
-        <p className="luxury-gallery-sub-title">To preserve authenticity, the images you see here are captured by our customers themselves, real moments, real Pateluxe creations.</p>
+        <p className="luxury-gallery-sub-title">
+          To preserve authenticity, the images you see here are captured by our
+          customers themselves, real moments, real Pateluxe creations.
+        </p>
 
         <div className="luxury-gallery-grid">
           {images.map((img, index) => (

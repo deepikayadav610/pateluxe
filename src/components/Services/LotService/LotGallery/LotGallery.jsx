@@ -28,7 +28,7 @@ const LotVideoGallery = () => {
               className="gallery-card"
               onClick={() => setActiveVideo(video)}
             >
-              <video src={video} muted playsInline />
+              <video src={video} muted playsInline controls={false} />
               <div className="play-overlay">
                 <FaPlay />
               </div>
@@ -44,8 +44,8 @@ const LotVideoGallery = () => {
             <button className="video-close" onClick={closeVideo}>
               <FaTimes />
             </button>
-            <video src={activeVideo} controls autoPlay playsInline />
-          </div>
+            <video src={activeVideo} autoPlay playsInline  controls={false} />
+          </div>6
         </div>
       )}
     </>

@@ -12,3 +12,7 @@ img {
   -webkit-user-drag: none;
   user-drag: none;
 }
+
+video {
+  pointer-events: none; 
+}
