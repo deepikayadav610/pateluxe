@@ -2,6 +2,7 @@ import "./CustomizedJewellery.css";
 import { Link } from "react-router-dom";
 import SEO from "../../SEO";
 import { FaWhatsapp } from "react-icons/fa";
+import CustomizedJewelleryGallery from "./CustomizedJewelleryGallery/CustomizedJewelleryGallery";
 
 const CustomizedJewellery = () => {
   return (
@@ -56,6 +57,8 @@ const CustomizedJewellery = () => {
           />
         </div>
       </section>
+
+      <CustomizedJewelleryGallery />
     </>
   );
 };
