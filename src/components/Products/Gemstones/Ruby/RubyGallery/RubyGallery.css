@@ -65,7 +65,10 @@
 }
 
 .ruby-media-box video {
-  background: #000;
+  background:  linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.45),
+    rgba(255, 255, 255, 0.05) 60%);
 }
 
 /* ===== VIDEO CONTROLS ===== */
@@ -212,7 +215,7 @@
     font-size: 0.65rem;
   }
   .ruby-video-controls {
-    left: 8px;
+    right: 8px;
     bottom: 8px;
     gap: 8px;
   }

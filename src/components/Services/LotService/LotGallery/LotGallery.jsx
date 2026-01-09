@@ -3,12 +3,14 @@ import { FaTimes, FaPlay } from "react-icons/fa";
 import "./LotGallery.css";
 
 const videos = [
-  "https://res.cloudinary.com/dhtrmwxyn/video/upload/v1767850108/Lot_1_aq9vik.mp4",
-  "https://res.cloudinary.com/dhtrmwxyn/video/upload/v1767850149/Lot_2_ovk7p0.mp4",
-  "https://res.cloudinary.com/dhtrmwxyn/video/upload/v1767850121/Lot_3_s5dwma.mp4",
-  "https://res.cloudinary.com/dhtrmwxyn/video/upload/v1767850108/Lot_4_pldnnz.mp4",
-  "https://res.cloudinary.com/dhtrmwxyn/video/upload/v1767850111/Lot_5_xlkpx3.mp4",
-  "https://res.cloudinary.com/dhtrmwxyn/video/upload/v1767850099/Lot_6_wfggry.mp4",
+  "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1767850108/Lot_1_aq9vik.mp4",
+  "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1767850149/Lot_2_ovk7p0.mp4",
+  "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1767850121/Lot_3_s5dwma.mp4",
+  "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1767850108/Lot_4_pldnnz.mp4",
+  "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1767850111/Lot_5_xlkpx3.mp4",
+  "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1767850099/Lot_6_wfggry.mp4",
+  "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1767951613/Lot7_criegv.mp4",
+  "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1767951621/Lot8_jxxqsx.mp4",
 ];
 
 const LotVideoGallery = () => {

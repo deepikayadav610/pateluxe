@@ -22,6 +22,54 @@ const ruby = [
     video:
       "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1767850075/Ruby_Final_Video_3_swete3.mp4",
   },
+  {
+    id: 4,
+    name: "Ruby 4",
+    video:
+      "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1767850108/Lot_1_aq9vik.mp4",
+  },
+  {
+    id: 5,
+    name: "Ruby 5",
+    video:
+      "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1767850149/Lot_2_ovk7p0.mp4",
+  },
+  {
+    id: 6,
+    name: "Ruby 6",
+    video:
+      "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1767850121/Lot_3_s5dwma.mp4",
+  },
+  {
+    id: 7,
+    name: "Ruby 7",
+    video:
+      "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1767850108/Lot_4_pldnnz.mp4",
+  },
+  {
+    id: 8,
+    name: "Ruby 8",
+    video:
+      "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1767850111/Lot_5_xlkpx3.mp4",
+  },
+  {
+    id: 9,
+    name: "Ruby 9",
+    video:
+      "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1767850099/Lot_6_wfggry.mp4",
+  },
+  {
+    id: 10,
+    name: "Ruby 10",
+    video:
+      "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1767951613/Lot7_criegv.mp4",
+  },
+  {
+    id: 11,
+    name: "Ruby 11",
+    video:
+      "https://res.cloudinary.com/dhtrmwxyn/video/upload/q_auto,f_auto/v1767951621/Lot8_jxxqsx.mp4",
+  },
 ];
 
 const RubyGallery = () => {
